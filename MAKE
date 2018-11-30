@@ -1,0 +1,4 @@
+python3 texlab_href.py 
+sed -i 's/\[\]//g' tidied.tex
+sed -i 's/\n\$[\\;]*\$ *\n//g' tidied.tex
+sed -i 's/\$[\\[,.;:]]*\$//g' tidied.tex

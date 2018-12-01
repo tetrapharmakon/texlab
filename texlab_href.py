@@ -1,6 +1,6 @@
 import re
 import subprocess
-COMMAND = "awk '/^$/ { if (blank++) next; print }1' to-be-tidied.tex >> 'clean.tex'"
+COMMAND = "awk '/^$/ { if (blank++) next; print }1' to-be-tidied.tex > 'clean.tex'"
 subprocess.call(COMMAND, shell=True)
 
 REGEXES = [
@@ -13,20 +13,16 @@ REGEXES = [
     (r"\[\]", r""),
     # remove []
     (r" *\\,\. *\n", r""),
+    # remove the horrible \,.
     (r"\\[,;]", r""),
-    (r"^ {2,}", r"")
-    # remove unwanted newlines before end env
-    # (r"\n{2,}\\begin", r"\n\\begin"),
-    # # remove unwanted newlines before begin env
-    # (r"(\\begin\{.*?\})\n{2,}", r"\1\n")
-    # # remove unwanted newlines after begin env
+    # remove manually included spacing
+    (r"^ {2,}", r""),
+    # remove unwanted spaces at beginline
+    (r"\\math(bb|sf|bf|cal)\{([A-Z])\}", r"\\\1\2"),
+    # \math<roba>{<[A-Z]>} -> \<roba>[A-Z]
+    (r"&\#643;", r"\\esh "),
+    # ʃ -> \esh
     ]
-    # (r"", r""),
-    # (r"", r""),
-    # (r"", r""),
-    # (r"", r""),
-    # (r"", r""),
-    # (r"", r"")
 INFILE = open('clean.tex', 'r')
 outfile = open('tidied.tex', 'w')
 

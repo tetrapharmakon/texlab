@@ -353,7 +353,7 @@ If $C$ is a concept, a \LabRef{nLab}{type}, then a \LabRef{nLab}{judgement}
 c \colon C
 \end{displaymath}
 says that $c$ is an instance of the concept $C$, or that $c$ is a \LabRef{nLab}{term} of type $C$.
-For instance if $\mathbb{N}$ is the concept of \LabRef{nLab}{natural numbers}, then the judgement $n \colon \mathbb{N}$ says that $n$ is a natural number. Clearly here the ``concept'' $\mathbb{N}$ may just as well be thought of as the \LabRef{nLab}{set} of all its instances.
+For instance if $\bbN$ is the concept of \LabRef{nLab}{natural numbers}, then the judgement $n \colon \bbN$ says that $n$ is a natural number. Clearly here the ``concept'' $\bbN$ may just as well be thought of as the \LabRef{nLab}{set} of all its instances.
 Given concepts/types $A$ and $B$, there is the concept of maps between them, the \LabRef{nLab}{function type} $B\to A$. In the \LabRef{nLab}{categorical semantics} this is the \LabRef{nLab}{internal hom}.
 The judgement that there is a \LabRef{nLab}{function}, hence an instance $f$ of the concept of functions
 \begin{displaymath}
@@ -370,7 +370,7 @@ All $B$ are $A$
 hence that if $A$ is das \textbf{A}llgemeine (general, universal) concept then $B$ is das \textbf{B}esondere (special, particular) concept.
 This formalization of Aristotle's ``All $B$ are $A$'' in \LabRef[categiorical logic]{nLab}{categorical logic}/\LabRef{nLab}{type} has been proposed in (\hyperlink{PalmeReyesMacnamaraReyes94}{LaPalmeReyes-Macnamara-Reyes 94, 2.3}), where it is attributed to \LabRef{nLab}{William Lawvere}, and in (\hyperlink{Pagnan10}{Pagnan 10, def. 3.1}).
 Notice that the choice of $f$ here is an important part of the formalization which is missing in Aristotle's informal logic and causing ambiguity there.
-For instance all \LabRef{nLab}{natural numbers} are \LabRef{nLab}{real numbers}, but there are many inequivalent \LabRef{nLab}{subgroup} inclusions $\mathbb{Z}\hookrightarrow \mathbb{R}$ realizing this. For the purposes of \LabRef{nLab}{prequantum field theory} these choices correspond to the choice of \LabRef{nLab}{Planck's constant} (see the discussion there).
+For instance all \LabRef{nLab}{natural numbers} are \LabRef{nLab}{real numbers}, but there are many inequivalent \LabRef{nLab}{subgroup} inclusions $\bbZ\hookrightarrow \bbR$ realizing this. For the purposes of \LabRef{nLab}{prequantum field theory} these choices correspond to the choice of \LabRef{nLab}{Planck's constant} (see the discussion there).
 Similarly, once we have that the informal ``All $B$ are $A$.'' is formalized by a map of types, we see further refinement of the ancient logical notion.
 First, the meaning of $B$,$A$ may depend on some \LabRef{nLab}{context} $C$. Leaving that implicit is arguably the greatest source of ambiguity in Aristotle's logic. But it is easily fixed while staying true to the original intention: in general $B$ and $A$ are to be taken as $C$-\LabRef{nLab}{dependent types}. Then the intended meaning of \emph{All $B$ are $A$.} is expressed by the \LabRef{nLab}{dependent product} over the function type formed in context $C$
 \begin{displaymath}
@@ -400,17 +400,17 @@ The \LabRef{nLab}{categorical semantics} of $(b = b)$ is the \LabRef{nLab}{loop 
 Under composition of loops, this object canonically carries the structure of an \LabRef{nLab}{infinity-group}.
 \begin{prop}
 \label{LoopingDeloopingTheorem}\hypertarget{LoopingDeloopingTheorem}{}
-In any \LabRef[homotopy topos]{nLab}{(infinity,1)-topos} $\mathbf{H}$, the operation of forming \LabRef{nLab}{loop space objects} constitutes an \LabRef{nLab}{equivalence of (infinity,1)-categories}
+In any \LabRef[homotopy topos]{nLab}{(infinity,1)-topos} $\bfH$, the operation of forming \LabRef{nLab}{loop space objects} constitutes an \LabRef{nLab}{equivalence of (infinity,1)-categories}
 \begin{displaymath}
-Grp(\mathbf{H})
-\stackrel{\overset{\Omega}{\longleftarrow}}{\underset{\mathbf{B}}{\longrightarrow}}
-\mathbf{H}^{\ast/}_{\geq 1}
+Grp(\bfH)
+\stackrel{\overset{\Omega}{\longleftarrow}}{\underset{\bfB}{\longrightarrow}}
+\bfH^{\ast/}_{\geq 1}
 \end{displaymath}
-between \LabRef{nLab}{infinity-groups} in $\mathbf{H}$ and \LabRef[pointed]{nLab}{pointed objects} \LabRef[connected]{nLab}{n-connected object in an (infinity,1)-topos} objects in $\mathbf{H}$.
+between \LabRef{nLab}{infinity-groups} in $\bfH$ and \LabRef[pointed]{nLab}{pointed objects} \LabRef[connected]{nLab}{n-connected object in an (infinity,1)-topos} objects in $\bfH$.
 \end{prop}
-The inverse equivalence $\mathbf{B}$ is called \LabRef{nLab}{delooping}. See at \LabRef{nLab}{looping and delooping} for more.
-Now in \LabRef{nLab}{homotopy type theory} and in \LabRef[elementary (infinity,1)-toposes]{nLab}{elementary (infinity,1)-topos}, the definition of \LabRef{nLab}{infinity-groups} as grouplike \LabRef{nLab}{A-infinity algebras} is not available, since the latter is not a finitary concept. But by prop. \ref{LoopingDeloopingTheorem} the concept also has a simple finitary equivalent incarnation, which is available in \LabRef{nLab}{homotopy type theory}: we may \emph{identify} an \LabRef{nLab}{infinity-group} $G$ with its pointed connected delooping type $\mathbf{B}G$.
-Indeed this is most useful: homotopy type theory in the \LabRef{nLab}{context} of $\mathbf{B}G$ is the \LabRef[infinity]{nLab}{infinity-representation}-\LabRef{nLab}{representation theory} of $G$:
+The inverse equivalence $\bfB$ is called \LabRef{nLab}{delooping}. See at \LabRef{nLab}{looping and delooping} for more.
+Now in \LabRef{nLab}{homotopy type theory} and in \LabRef[elementary (infinity,1)-toposes]{nLab}{elementary (infinity,1)-topos}, the definition of \LabRef{nLab}{infinity-groups} as grouplike \LabRef{nLab}{A-infinity algebras} is not available, since the latter is not a finitary concept. But by prop. \ref{LoopingDeloopingTheorem} the concept also has a simple finitary equivalent incarnation, which is available in \LabRef{nLab}{homotopy type theory}: we may \emph{identify} an \LabRef{nLab}{infinity-group} $G$ with its pointed connected delooping type $\bfBG$.
+Indeed this is most useful: homotopy type theory in the \LabRef{nLab}{context} of $\bfBG$ is the \LabRef[infinity]{nLab}{infinity-representation}-\LabRef{nLab}{representation theory} of $G$:
 [[!include homotopy type representation theory -- table]]
 (\hyperlink{NSS}{NSS}, \hyperlink{dcct}{dcct})
 \textbf{Some $B_1$ is $B_2$.}
@@ -440,9 +440,9 @@ and if we read $B_1 \underset{C}{\times} B_2$ as ``some $B_1$'' then according t
 \begin{example}
 \label{PrincipalBundlesAsJudgements}\hypertarget{PrincipalBundlesAsJudgements}{}
 \textbf{(principal infinity-bundles as judgements)}
-Specifically if $C = \mathbf{B}G$ here is \LabRef[pointed]{nLab}{pointed object} via a map from $B_2 = E = \ast$, and \LabRef[connected]{nLab}{n-connected object in an (infinity,1)-topos}, hence equivalently the \LabRef{nLab}{delooping} of its \LabRef{nLab}{infinity-group} $G$ of \LabRef[loops]{nLab}{loop space object}, then (writing now $B$ for $B_1$) a map of types
+Specifically if $C = \bfBG$ here is \LabRef[pointed]{nLab}{pointed object} via a map from $B_2 = E = \ast$, and \LabRef[connected]{nLab}{n-connected object in an (infinity,1)-topos}, hence equivalently the \LabRef{nLab}{delooping} of its \LabRef{nLab}{infinity-group} $G$ of \LabRef[loops]{nLab}{loop space object}, then (writing now $B$ for $B_1$) a map of types
 \begin{displaymath}
-c \colon B \longrightarrow \mathbf{B}G
+c \colon B \longrightarrow \bfBG
 \end{displaymath}
 may be thought of as a \LabRef{nLab}{cocycle} on $B$ with \LabRef{nLab}{coefficients} in $G$, representing a class in the \LabRef{nLab}{nonabelian cohomology} of $B$. See at \LabRef{nLab}{cohomology} for more on this general concept of cohomology.
 In this case the \LabRef{nLab}{homotopy fiber} of $f$ is the $G$-\LabRef{nLab}{principal infinity-bundle} $P \to B$ classified by $f$, fitting into the \LabRef{nLab}{homotopy pullback} square.
@@ -452,10 +452,10 @@ P &\longrightarrow& E
 \\
 \downarrow && \downarrow
 \\
-B &\stackrel{c}{\longrightarrow} & \mathbf{B}G
+B &\stackrel{c}{\longrightarrow} & \bfBG
 }
 \end{displaymath}
-Via the above translation this is an Aristotlean judgement of the form ``Some $B$ are $E$'' in the context of $\mathbf{B}G$.
+Via the above translation this is an Aristotlean judgement of the form ``Some $B$ are $E$'' in the context of $\bfBG$.
 \end{example}
 \textbf{Summary}
 In summary we have that basic judgements in Aristotle's logic, when some implicit assumptions are made explicit and the broad intention is retained, are naturally taken to be formalized in \LabRef{nLab}{type theory} as combinations of a \LabRef{nLab}{type former} and a \LabRef{nLab}{judgement} asserting a \LabRef{nLab}{term} of that type, as follows.
@@ -514,28 +514,28 @@ What is not present in such bare homotopy type theory is determination of furthe
 A general abstract way to express a kind of quality carried by types is to posit a \emph{projection} operation $\bigcirc$ that projects out the \emph{moment of pure such quality}.
 For instance for formalizing realistic physics one needs to determine \LabRef[bosonic]{nLab}{boson} and \LabRef[fermionic]{nLab}{boson} moments (we come to this \hyperlink{Externalization}{below}), and one way of doing so is by considering a \LabRef{nLab}{projection} operation that projects every space of fields to its purely bosonic \LabRef{nLab}{body} (lemma \ref{SequenceOfSites} below).
 Generally, for $X$ a type, then $\bigcirc X$ is to be the result of projecting out some pure quality of $X$. This being a projection means that $\bigcirc X  \simeq \bigcirc \bigcirc X$. For this to be \LabRef{nLab}{constructive}, we need to specify a specific comparison map that gives this equivalence. Hence we say a \emph{moment projection} is an operation $\bigcirc$ on the type system together with \LabRef[natural functions]{nLab}{natural transformation} $X \to \bigcirc X$ such that $\bigcirc(X \to \bigcirc X)$ is an \LabRef{nLab}{equivalence} $\bigcirc \stackrel{\simeq}{\longrightarrow} \bigcirc \bigcirc X$.
-In categorical semantics this means essentially that $\bigcirc$ is an \LabRef{nLab}{idempotent monad} on the type system $\mathbf{H}$.
+In categorical semantics this means essentially that $\bigcirc$ is an \LabRef{nLab}{idempotent monad} on the type system $\bfH$.
 Alternatively we may ask for a comparison map the other way around, $\Box X \longrightarrow X$, such that $\Box(\Box X \longrightarrow X)$ is an equivalence. In \LabRef{nLab}{categorical semantics} this means essentially that $\Box$ is an \LabRef{nLab}{idempotent comonad}.
 \begin{defn}
 \label{Moments}\hypertarget{Moments}{}
-A \emph{moment} on (or in) a type system $\mathbf{H}$ is
+A \emph{moment} on (or in) a type system $\bfH$ is
 \begin{itemize}%
-\item an \LabRef{nLab}{idempotent monad} $\bigcirc \colon \mathbf{H} \to \mathbf{H}$
+\item an \LabRef{nLab}{idempotent monad} $\bigcirc \colon \bfH \to \bfH$
 \end{itemize}
 or
 \begin{itemize}%
-\item an \LabRef{nLab}{idempotent comonad} $\Box \colon \mathbf{H} \to \mathbf{H}$.
+\item an \LabRef{nLab}{idempotent comonad} $\Box \colon \bfH \to \bfH$.
 \end{itemize}
 Given a moment, we write
 \begin{displaymath}
-\mathbf{H}_{\bigcirc, \Box} \hookrightarrow \mathbf{H}
+\bfH_{\bigcirc, \Box} \hookrightarrow \bfH
 \end{displaymath}
 for the inclusion of its image, which we think of as the collection of those types that exhibit the moment purely (conversely these define the kind of moment as whatever quality it is that they all exhibit purely).
 \end{defn}
 \begin{remark}
 \label{}\hypertarget{}{}
 This is a language construct natural and familiar also from the point of view of \LabRef{nLab}{computational trinitarianism}, see at \LabRef{nLab}{monad (in computer science)}.
-Further, it makes sense to refer to moments $\Box,\bigcirc$ also as \LabRef{nLab}{modal operators} or just \LabRef{nLab}{modalities} for short, and speak of type theory equipped with such operators as \LabRef{nLab}{modal type theory}, a type-theoretic refinement of \LabRef{nLab}{modal logic}. In this language the types in $\mathbf{H}_{\Box}$ are the $\Box$-\_\LabRef{nLab}{modal types}\_.
+Further, it makes sense to refer to moments $\Box,\bigcirc$ also as \LabRef{nLab}{modal operators} or just \LabRef{nLab}{modalities} for short, and speak of type theory equipped with such operators as \LabRef{nLab}{modal type theory}, a type-theoretic refinement of \LabRef{nLab}{modal logic}. In this language the types in $\bfH_{\Box}$ are the $\Box$-\_\LabRef{nLab}{modal types}\_.
 \end{remark}
 \begin{remark}
 \label{MomentsAndSimilarity}\hypertarget{MomentsAndSimilarity}{}
@@ -550,7 +550,7 @@ A moment $\bigcirc$ or $\Box$ may be thought of as encoding a concept of \emph{s
 Example of this are made explicit below as example \ref{SimilarityWithRespectToPureBeing}, example \ref{ShapeAsAConceptOfSimilarity}.
 \begin{prop}
 \label{bigcircpureObjectsAreEMObjects}\hypertarget{bigcircpureObjectsAreEMObjects}{}
-The category $\mathbf{H}_{\bigcirc}$ is equivalently the \LabRef{nLab}{Eilenberg-Moore category} of $\bigcirc$.
+The category $\bfH_{\bigcirc}$ is equivalently the \LabRef{nLab}{Eilenberg-Moore category} of $\bigcirc$.
 \end{prop}
 This is a standard fact in \LabRef{nLab}{category theory}, see at \emph{\href{idempotent+monad#AlgebrasForAnIdempotentMonad}{idempotent monad -- Algebras}}.
 \begin{remark}
@@ -566,9 +566,9 @@ The \emph{opposite} of a moment $\bigcirc$, def. \ref{Moments} is, if it exists,
 \begin{enumerate}%
 \item either $\bigcirc$ \LabRef{nLab}{left adjoint} to $\Box$ and such that there is an \LabRef{nLab}{adjoint triple}
 \begin{displaymath}
-\mathbf{H}_{\Box}\simeq H_{\bigcirc}
+\bfH_{\Box}\simeq H_{\bigcirc}
 \stackrel{\hookrightarrow}{\stackrel{\longleftarrow}{\hookrightarrow}}
-\mathbf{H}
+\bfH
 \end{displaymath}
 which we denote by
 \begin{displaymath}
@@ -576,9 +576,9 @@ which we denote by
 \end{displaymath}
 \item or \LabRef{nLab}{right adjoint} to it with
 \begin{displaymath}
-\mathbf{H}_{\Box}\simeq \mathbf{H}_{\bigcirc}
+\bfH_{\Box}\simeq \bfH_{\bigcirc}
 \stackrel{\longleftarrow}{\stackrel{\hookrightarrow}{\longleftarrow}}
-\mathbf{H}
+\bfH
 \end{displaymath}
 which we denote by
 \begin{displaymath}
@@ -602,11 +602,11 @@ In \LabRef{nLab}{categorical semantics} an opposition of moments, def. \ref{Unit
 It is fairly familiar from the practice of \LabRef{nLab}{category theory} that \LabRef{nLab}{adjunctions} express oppositions. The following example is drawn from \LabRef{nLab}{arithmetic} and is meant to illustrate this in a familar context, but the actual examples that we will be concerned with are more fundamental.
 \begin{example}
 \label{}\hypertarget{}{}
-Consider the two inclusions $even, odd \colon (\mathbb{Z},\lt ) \hookrightarrow (\mathbb{Z},\lt)$ of the even and the odd integers, i.e. the maps $n \mapsto 2 n$ and $n \mapsto (2n+1)$, respectively.
+Consider the two inclusions $even, odd \colon (\bbZ,\lt ) \hookrightarrow (\bbZ,\lt)$ of the even and the odd integers, i.e. the maps $n \mapsto 2 n$ and $n \mapsto (2n+1)$, respectively.
 \begin{displaymath}
-\mathbb{Z}
+\bbZ
 \stackrel{\overset{even}{\hookrightarrow}}{\stackrel{\longleftarrow}{\underset{odd}{\hookrightarrow}}}
-\mathbb{Z}
+\bbZ
 \end{displaymath}
 Both are adjoint to the operation of forming the $floor$ of the result of dividing by two, this is right adjoint to the inclusion of even numbers, and left adjoint to the inclusion of odd numbers.
 \begin{displaymath}
@@ -618,7 +618,7 @@ Both are adjoint to the operation of forming the $floor$ of the result of dividi
 This has been considered in (\href{http://ncatlab.org/nlab/show/Aufhebung#Law00}{Lawvere 00})
 \begin{example}
 \label{}\hypertarget{}{}
-Consider the inclusion $\iota \colon (\mathbb{Z}, \lt) \hookrightarrow (\mathbb{R}, \lt)$ of the \LabRef{nLab}{integers} into the \LabRef{nLab}{real numbers}, both regarded \LabRef{nLab}{linear orders}. This inclusion has a \LabRef{nLab}{left adjoint} given by $ceiling$ and a right adjoint given by $floor$. The composite $Ceiling \coloneqq \iota ceiling$ is an \LabRef{nLab}{idempotent monad} and the composite $Floor \coloneqq \iota floor$ is an \LabRef{nLab}{idempotent comonad} on $\mathbb{R}$. Both express a \emph{moment of integrality} in an real number, but in opposite ways, each real number $x\in \mathbb{R}$ sits in between its floor and celling
+Consider the inclusion $\iota \colon (\bbZ, \lt) \hookrightarrow (\bbR, \lt)$ of the \LabRef{nLab}{integers} into the \LabRef{nLab}{real numbers}, both regarded \LabRef{nLab}{linear orders}. This inclusion has a \LabRef{nLab}{left adjoint} given by $ceiling$ and a right adjoint given by $floor$. The composite $Ceiling \coloneqq \iota ceiling$ is an \LabRef{nLab}{idempotent monad} and the composite $Floor \coloneqq \iota floor$ is an \LabRef{nLab}{idempotent comonad} on $\bbR$. Both express a \emph{moment of integrality} in an real number, but in opposite ways, each real number $x\in \bbR$ sits in between its floor and celling
 \begin{displaymath}
 Floor(x) \lt x \lt Ceiling(x)
 \end{displaymath}
@@ -937,9 +937,9 @@ The \LabRef{nLab}{double negation} subtopos is \LabRef{nLab}{Boolean topos}.
 (\hyperlink{Johnstone02}{Johnstone 02, lemma A4.5.21})
 This means that $(\flat \dashv \sharp)$ is naturally regarded as being the \LabRef[ground topos]{nLab}{base topos} of the topos formed by the ambient type system, with the corresponding \LabRef{nLab}{adjoint triple}
 \begin{displaymath}
-\mathbf{H}_{\sharp}
+\bfH_{\sharp}
 \stackrel{\hookrightarrow}{\stackrel{\stackrel{\Gamma}{\longleftarrow}}{\hookrightarrow}}
-\mathbf{H}
+\bfH
 \end{displaymath}
 regarded as the termimal \LabRef{nLab}{geometric morphism} whose \LabRef{nLab}{direct image} $\Gamma$ forms \LabRef{nLab}{global points} (aka \LabRef{nLab}{global sections}).
 Therefore we label the resolution of the initial opposition as ``ground'' for ``ground topos''(\LabRef{nLab}{base topos}).
@@ -996,10 +996,10 @@ In summary, we have found that $(\flat \dashv \sharp)$ expresses \emph{quantity}
 }
 \end{displaymath}
 \hypertarget{quality}{}\paragraph*{{Quality}}\label{quality}
-Proceeding, we next demand a second order opposition, def. \ref{HigherOrderOpposition}, of the above opposition $(\flat \dashv \sharp)$, hence we posit a moment $&#643;$ such that
+Proceeding, we next demand a second order opposition, def. \ref{HigherOrderOpposition}, of the above opposition $(\flat \dashv \sharp)$, hence we posit a moment $\esh $ such that
 \begin{displaymath}
 \itexarray{
-&#643; &\dashv& \flat
+\esh  &\dashv& \flat
 \\
 \bot && \bot
 \\
@@ -1008,26 +1008,26 @@ Proceeding, we next demand a second order opposition, def. \ref{HigherOrderOppos
 \end{displaymath}
 We ask this to have definite negation, def. \ref{CompleteOpposition}. This means that
 \begin{enumerate}%
-\item $&#643; \ast \simeq \ast$ --- the \LabRef{nLab}{shape} of the point is trivial;
-\item $\flat \to &#643;$ is \LabRef[epi]{nLab}{epimorphism} on \LabRef{nLab}{0-types} --- the \LabRef{nLab}{points-to-pieces transform} is onto.
+\item $\esh  \ast \simeq \ast$ --- the \LabRef{nLab}{shape} of the point is trivial;
+\item $\flat \to \esh $ is \LabRef[epi]{nLab}{epimorphism} on \LabRef{nLab}{0-types} --- the \LabRef{nLab}{points-to-pieces transform} is onto.
 \end{enumerate}
-Together this are the axioms of \LabRef{nLab}{cohesion} as considered in (\hyperlink{Lawvere07}{Lawvere 07}). (There it is additionally asked that $&#643;$ preserves binary \LabRef{nLab}{Cartesian products}.)
-The intuition is that positing these qualites on a type system makes it, or rather its types $X$, behave like a \LabRef{nLab}{cohesive} \LabRef{nLab}{substance} where points $\flat X$ are separate but held together by a cohesive attraction which, when the opposing repulsion is removed and only pure $&#643;$-moment is retained, makes them collapse to the components $&#643; X$.
+Together this are the axioms of \LabRef{nLab}{cohesion} as considered in (\hyperlink{Lawvere07}{Lawvere 07}). (There it is additionally asked that $\esh $ preserves binary \LabRef{nLab}{Cartesian products}.)
+The intuition is that positing these qualites on a type system makes it, or rather its types $X$, behave like a \LabRef{nLab}{cohesive} \LabRef{nLab}{substance} where points $\flat X$ are separate but held together by a cohesive attraction which, when the opposing repulsion is removed and only pure $\esh $-moment is retained, makes them collapse to the components $\esh  X$.
 The second clause here is closely related to $(\flat \dashv \sharp)$ providing \LabRef{nLab}{Aufhebung} for $(\emptyset \dashv \ast)$:
 \begin{prop}
 \label{}\hypertarget{}{}
-If $\flat \to &#643;$ is epi on 0-types, then $\sharp \emptyset \simeq \emptyset$. Conversely, if $\sharp \emptyset \simeq \emptyset$ and $\mathbf{H}_{\sharp}$ is a \LabRef{nLab}{Boolean topos}, then $\flat \to &#643;$ is epi on 0-types.
+If $\flat \to \esh $ is epi on 0-types, then $\sharp \emptyset \simeq \emptyset$. Conversely, if $\sharp \emptyset \simeq \emptyset$ and $\bfH_{\sharp}$ is a \LabRef{nLab}{Boolean topos}, then $\flat \to \esh $ is epi on 0-types.
 \end{prop}
 (\href{http://ncatlab.org/nlab/show/points-to-pieces%20transform#LawvereMenni15}{Lawvere-Menni 15, lemmas 4.1, 4.2}).
 In the more refined \LabRef{nLab}{categorical semantics} of \LabRef[homotopy toposes]{nLab}{(infinity,1)-topos} $\flat$ modulates \LabRef{nLab}{locally constant infinity-stacks}. The above adjunction then expresses the central statement of higher \LabRef{nLab}{Galois theory} (\hyperlink{dcct}{dcct}):
 \begin{displaymath}
-\frac{X \to \flat Grpd_\infty}{&#643; X\to Grpd_\infty}
+\frac{X \to \flat Grpd_\infty}{\esh  X\to Grpd_\infty}
 \end{displaymath}
-saying that locally constant $\infty$-stacks on $X$ are equivalent to \LabRef{nLab}{infinity-permutation representations} of $&#643; X$, and that $&#643; X$ therefore is the \LabRef{nLab}{fundamental infinity-groupoid} of $X$, the \LabRef{nLab}{shape} of $X$, both in the intuitive as well as in the technical sense of \LabRef{nLab}{algebraic topology}.
+saying that locally constant $\infty$-stacks on $X$ are equivalent to \LabRef{nLab}{infinity-permutation representations} of $\esh  X$, and that $\esh  X$ therefore is the \LabRef{nLab}{fundamental infinity-groupoid} of $X$, the \LabRef{nLab}{shape} of $X$, both in the intuitive as well as in the technical sense of \LabRef{nLab}{algebraic topology}.
 Therefore we further add labels as follows.
 \begin{displaymath}
 \itexarray{
-\stackrel{shape}{} && & &#643; &\stackrel{}{\dashv}& \flat &  & & \stackrel{content}{}
+\stackrel{shape}{} && & \esh  &\stackrel{}{\dashv}& \flat &  & & \stackrel{content}{}
 \\
 && & \bot &\stackrel{}{}& \bot
 \\
@@ -1038,20 +1038,20 @@ Therefore we further add labels as follows.
 && & \emptyset &\dashv& \ast &
 }
 \end{displaymath}
-This means that in the presence of the further opposition $&#643; \dashv \flat$ the types $X$ which already had an underlying point content $\flat X$ now also have a \emph{shape} determined by these points sticking together via a \LabRef{nLab}{cohesive} attraction. This is a qualitative aspect of the types in addition to their quantitative moments $\flat X$ and $\sharp X$.
+This means that in the presence of the further opposition $\esh  \dashv \flat$ the types $X$ which already had an underlying point content $\flat X$ now also have a \emph{shape} determined by these points sticking together via a \LabRef{nLab}{cohesive} attraction. This is a qualitative aspect of the types in addition to their quantitative moments $\flat X$ and $\sharp X$.
 \begin{example}
 \label{ShapeAsAConceptOfSimilarity}\hypertarget{ShapeAsAConceptOfSimilarity}{}
-By remark \ref{MomentsAndSimilarity} the \LabRef{nLab}{shape modality} $&#643;$ determines a concept of similarity of types. This is a well known one:  encodes that two types have the same shape. $X$ and $Y$ may look like different differential geometric spaces, but $(X  similar_{&#643;} Y)$ holds if they have the same shape.
-In the standard \LabRef{nLab}{model} given by \LabRef{nLab}{smooth infinity-groupoids}, discussed in some detail around theorem \ref{SupergeometryIsModel} below there is for instance the \LabRef{nLab}{circle} $S^1$ and the \LabRef{nLab}{cylinder} $S^1 \times (0,1)$ over it, both regarded as \LabRef{nLab}{smooth manifolds} in the standard way. As such they are not equal (not \LabRef[diffeomorphic]{nLab}{diffeomorphism}), but clearly they are similar in some sense. The shape modality makes one such sense precise: $&#643; (S^1) \simeq &#643; (S^1 \times (0,1) \simeq B \mathbb{Z}$ and hence
+By remark \ref{MomentsAndSimilarity} the \LabRef{nLab}{shape modality} $\esh $ determines a concept of similarity of types. This is a well known one:  encodes that two types have the same shape. $X$ and $Y$ may look like different differential geometric spaces, but $(X  similar_{\esh } Y)$ holds if they have the same shape.
+In the standard \LabRef{nLab}{model} given by \LabRef{nLab}{smooth infinity-groupoids}, discussed in some detail around theorem \ref{SupergeometryIsModel} below there is for instance the \LabRef{nLab}{circle} $S^1$ and the \LabRef{nLab}{cylinder} $S^1 \times (0,1)$ over it, both regarded as \LabRef{nLab}{smooth manifolds} in the standard way. As such they are not equal (not \LabRef[diffeomorphic]{nLab}{diffeomorphism}), but clearly they are similar in some sense. The shape modality makes one such sense precise: $\esh  (S^1) \simeq \esh  (S^1 \times (0,1) \simeq B \bbZ$ and hence
 \begin{displaymath}
-S^1  similar_{&#643;}  (S^1 \times (0,1))
+S^1  similar_{\esh }  (S^1 \times (0,1))
 \end{displaymath}
 \end{example}
 For instance there are now types for which $\flat X = \ast$ and yet they may be very different from the point $\ast$ themselves, hence while quantiatively these do not differ from the point, they must have some quality that distinguish them from the point. Hence this \LabRef{nLab}{unity of opposites} is \emph{geometric quality}. In standard \LabRef{nLab}{models} this geometric quality is for instance \LabRef{nLab}{topology} or \LabRef{nLab}{smooth structure} or \LabRef[formal smooth structure]{nLab}{formal smooth manifold} or \LabRef[supergeometric]{nLab}{supergeometry} structure.
 Therefore we write:
 \begin{displaymath}
 \itexarray{
-\stackrel{shape}{} && & &#643; &\stackrel{quality}{\dashv}& \flat &  & & \stackrel{content}{}
+\stackrel{shape}{} && & \esh  &\stackrel{quality}{\dashv}& \flat &  & & \stackrel{content}{}
 \\
 && & \bot &\stackrel{}{}& \bot
 \\
@@ -1062,16 +1062,16 @@ Therefore we write:
 && & \emptyset &\dashv& \ast &
 }
 \end{displaymath}
-Since with $(&#643; \dashv \sharp)$ we have arrived at an opposition of the form $(\bigcirc \dashv \Box)$, we should ask for further determination of these qualities by demanding via def. \ref{Localization} that $&#643;$ is exhibited by $\mathbb{R}$ (def. \ref{Localization}):
+Since with $(\esh  \dashv \sharp)$ we have arrived at an opposition of the form $(\bigcirc \dashv \Box)$, we should ask for further determination of these qualities by demanding via def. \ref{Localization} that $\esh $ is exhibited by $\bbR$ (def. \ref{Localization}):
 \begin{displaymath}
-&#643; = loc_{\mathbb{R}}
+\esh  = loc_{\bbR}
 \end{displaymath}
-In view of the above interpretation of $(&#643;\dashv \flat)$ via higher \LabRef{nLab}{Galois theory}, this comes with a clear meaning: this produces the \LabRef{nLab}{A1-homotopy theory} for $\mathbb{A}^1 = \mathbb{R}$. We may think of $\mathbb{R}$ as being \LabRef[the continuum]{nLab}{continuum}, i.e. the \LabRef{nLab}{real line} which is the model for the geometric paths that make $&#643;X$ be the \LabRef{nLab}{fundamental infinity-groupoid} of $X$.
+In view of the above interpretation of $(\esh \dashv \flat)$ via higher \LabRef{nLab}{Galois theory}, this comes with a clear meaning: this produces the \LabRef{nLab}{A1-homotopy theory} for $\bbA^1 = \bbR$. We may think of $\bbR$ as being \LabRef[the continuum]{nLab}{continuum}, i.e. the \LabRef{nLab}{real line} which is the model for the geometric paths that make $\esh X$ be the \LabRef{nLab}{fundamental infinity-groupoid} of $X$.
 \hypertarget{gauge_measure}{}\paragraph*{{Gauge (Measure)}}\label{gauge_measure}
-With the concepts given by $(\flat \dashv \sharp)$ and by $(&#643; \dashv \flat)$ thus understood, it remains to find which concept the full unity of unities of opposites
+With the concepts given by $(\flat \dashv \sharp)$ and by $(\esh  \dashv \flat)$ thus understood, it remains to find which concept the full unity of unities of opposites
 \begin{displaymath}
 \itexarray{
-&#643; &\dashv& \flat
+\esh  &\dashv& \flat
 \\
 \bot && \bot
 \\
@@ -1089,18 +1089,18 @@ E^\bullet(X) = [X,S]
 \end{prop}
 \begin{prop}
 \label{DifferentialHexagon}\hypertarget{DifferentialHexagon}{}
-For the moments $(&#643; \dashv \flat)$ the \LabRef[exact hexagon]{nLab}{differential hexagon} of prop. \ref{TheHexagon}
+For the moments $(\esh  \dashv \flat)$ the \LabRef[exact hexagon]{nLab}{differential hexagon} of prop. \ref{TheHexagon}
 \begin{displaymath}
 \itexarray{
-&& \overline{&#643;} X && \stackrel{}{\longrightarrow} && \overline{\flat} X
+&& \overline{\esh } X && \stackrel{}{\longrightarrow} && \overline{\flat} X
 \\
 & \nearrow & & \searrow & & \nearrow_{} && \searrow
 \\
-\overline{&#643;} \flat  X  && && X && && &#643; \overline{\flat} X
+\overline{\esh } \flat  X  && && X && && \esh  \overline{\flat} X
 \\
 & \searrow &  & \nearrow & & \searrow && \nearrow_{}
 \\
-&& \flat X && \longrightarrow && &#643; X
+&& \flat X && \longrightarrow && \esh  X
 }
 \end{displaymath}
 exhibits cohesive \LabRef{nLab}{stable homotopy types} $X$ as \LabRef[differential generalized cohomology theories]{nLab}{differential cohomology}.
@@ -1123,12 +1123,12 @@ Here the moments appearing in the hexagon have the following interpretation.
 && {{geometricbundles}\atop{withflatconnection}} && \underset{comparison/regulatormap}{\longrightarrow} && {{shape}\atop{ofbundle}}
 }
 \end{displaymath}
-Now, cocycles in \LabRef{nLab}{differential cohomology} are the mathematical incarnation of \LabRef[physical fields]{nLab}{field (physics)} in (stable) \LabRef{nLab}{higher gauge theory} (e.g. \LabRef[Freed 00]{nLab}{Dirac charge quantization and generalized differential cohomology}). Hence the existence of the opposing moments $&#643; \dashv \flat \dashv \sharp$ means that types carry \emph{gauge measure}.
+Now, cocycles in \LabRef{nLab}{differential cohomology} are the mathematical incarnation of \LabRef[physical fields]{nLab}{field (physics)} in (stable) \LabRef{nLab}{higher gauge theory} (e.g. \LabRef[Freed 00]{nLab}{Dirac charge quantization and generalized differential cohomology}). Hence the existence of the opposing moments $\esh  \dashv \flat \dashv \sharp$ means that types carry \emph{gauge measure}.
 From the \LabRef[gauge theoretic]{nLab}{gauge theory} perpective the $\flat$-moment is that exhibited by \LabRef{nLab}{flat infinity-connections}, its negative $\overline{\flat}$ moment is that exhibited by infinity-connections given by just differential form data. For \LabRef{nLab}{ordinary differential cohomology}, \LabRef{nLab}{differential K-theory} etc. this is the ``\LabRef[rational]{nLab}{rational homotopy theory}'' aspect.
 Hence in summary we have found determinations as follows.
 \begin{displaymath}
 \itexarray{
-\stackrel{shape}{} && loc_{\mathbb{R}} = & &#643; &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
+\stackrel{shape}{} && loc_{\bbR} = & \esh  &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
 \\
 && & \bot &\stackrel{gaugemeasure}{}& \bot
 \\
@@ -1148,15 +1148,15 @@ Continuing the process, we posit a further opposition of moments lifting the pre
 \\
 \vee && \vee
 \\
-&#643; &\dashv& \flat
+\esh  &\dashv& \flat
 }
 \end{displaymath}
 Since these are oppositions of the form $\bigcirc \dashv \Box$, \LabRef{nLab}{Aufhebung} is automatic here and not a further axiom.
 To see what these new moments mean, observe that now
 \begin{displaymath}
-X \to \Im X \to &#643; X
+X \to \Im X \to \esh  X
 \end{displaymath}
-is a factorization of the full \LabRef[shape]{nLab}{shape modality} projection through a finer approximation. Hence in addition to an intrinsic concept of \emph{path} (a \LabRef{nLab}{1-morphism} in the \LabRef{nLab}{fundamental infinity-groupoid} $&#643; X$) there is now an intrinsic concept of \emph{small path}.
+is a factorization of the full \LabRef[shape]{nLab}{shape modality} projection through a finer approximation. Hence in addition to an intrinsic concept of \emph{path} (a \LabRef{nLab}{1-morphism} in the \LabRef{nLab}{fundamental infinity-groupoid} $\esh  X$) there is now an intrinsic concept of \emph{small path}.
 Accordingly, what were \LabRef{nLab}{locally constant infinity-stacks} in the higher \LabRef{nLab}{Galois theory} encoded by $\flat$ now become coverings that are constant on \emph{small} scales. This is the concept of \LabRef{nLab}{étale morphism} as being a \LabRef{nLab}{formally étale morphism} with a condition of smallness on its fibers.
 Hence we find that this further determination is that of the moment of \emph{being étalé}.
 \begin{displaymath}
@@ -1165,7 +1165,7 @@ Hence we find that this further determination is that of the moment of \emph{bei
 \\
 && & \vee && \vee
 \\
-\stackrel{shape}{} && loc_{\mathbb{R}} = & &#643; &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
+\stackrel{shape}{} && loc_{\bbR} = & \esh  &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
 \\
 && & \bot &\stackrel{gaugemeasure}{}& \bot
 \\
@@ -1195,7 +1195,7 @@ In summary this gives:
 \\
 && & \vee && \vee
 \\
-\stackrel{shape}{} && loc_{\mathbb{R}} =& &#643; &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
+\stackrel{shape}{} && loc_{\bbR} =& \esh  &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
 \\
 && & \bot &\stackrel{gaugemeasure}{}& \bot
 \\
@@ -1208,7 +1208,7 @@ In summary this gives:
 \end{displaymath}
 More in detail, we may ask just \emph{how} small these small paths are. Hence we demand more generally an infinite tower
 \begin{displaymath}
-&#643;
+\esh 
 \lt
 \Im
 =
@@ -1227,7 +1227,7 @@ id
 of \LabRef[infinitesimal shape modalities]{nLab}{infinitesimal shape modality}, yielding a further factorization of the shape unit as
 \begin{displaymath}
 X \to \Im_{(1)}X \to \Im_{(2)}X 
-\to \Im_{(3)} X  \to \cdots \to \Im X \to &#643; X
+\to \Im_{(3)} X  \to \cdots \to \Im X \to \esh  X
 \end{displaymath}
 \hypertarget{differential}{}\paragraph*{{Differential}}\label{differential}
 In total, so far these are the axioms of \LabRef{nLab}{differential cohesion} (\hyperlink{dcct}{dcct}). Using these one may naturally axiomatize \LabRef{nLab}{local diffeomorphism} (def. \ref{LocalDiffeomorphisms} below), \LabRef{nLab}{jet bundles} and related concepts.
@@ -1263,7 +1263,7 @@ The moments proceed by a further higher-oder opposition
 \rightsquigarrow &\dashv& \R
 }
 \end{displaymath}
-For this to have non-degenerate models one finds that infinitesimals in degree 0 must be allowed to map to products of infinitesimals in non-vanishing degree. This means that the grading is not by a free group, but for instance by a finite \LabRef{nLab}{cyclic group} $\mathbb{Z}/n\mathbb{Z}$-grading. The minimal choice is $\mathbb{Z}/2\mathbb{Z}$-grading.
+For this to have non-degenerate models one finds that infinitesimals in degree 0 must be allowed to map to products of infinitesimals in non-vanishing degree. This means that the grading is not by a free group, but for instance by a finite \LabRef{nLab}{cyclic group} $\bbZ/n\bbZ$-grading. The minimal choice is $\bbZ/2\bbZ$-grading.
 \hypertarget{FormalizationSuperGrading}{}\paragraph*{{Super}}\label{FormalizationSuperGrading}
 We are to require that this level provides \LabRef{nLab}{Aufhebung} of the previous oppositions, def. \ref{ResolutionOfOpposition}, in that
 \begin{displaymath}
@@ -1286,7 +1286,7 @@ We indicate this notationally by
 \begin{displaymath}
 \e \coloneqq \overline{\rightsquigarrow}
 \end{displaymath}
-We may still further determine this, via def. \ref{Localization}, be requiring that there exists a type $\mathbb{R}^{0|1}$ which exhibits $\R$, in that $\R \simeq loc_{\mathbb{R}^{0|1}}$.
+We may still further determine this, via def. \ref{Localization}, be requiring that there exists a type $\bbR^{0|1}$ which exhibits $\R$, in that $\R \simeq loc_{\bbR^{0|1}}$.
 In summary we now have arrived at the following process of determinations.
 \begin{displaymath}
 \itexarray{
@@ -1294,7 +1294,7 @@ In summary we now have arrived at the following process of determinations.
 \\
 && & \bot && \bot
 \\
-&&  & \rightsquigarrow &\dashv& \R & = loc_{\mathbb{R}^{0|1}}
+&&  & \rightsquigarrow &\dashv& \R & = loc_{\bbR^{0|1}}
 \\
 && & \vee &\stackrel{super}{}& \vee
 \\
@@ -1306,7 +1306,7 @@ In summary we now have arrived at the following process of determinations.
 \\
 && & \vee && \vee
 \\
-\stackrel{shape}{} && loc_{\mathbb{R}} =& &#643; &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
+\stackrel{shape}{} && loc_{\bbR} =& \esh  &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
 \\
 && & \bot &\stackrel{gaugemeasure}{}& \bot
 \\
@@ -1417,7 +1417,7 @@ Including in homotopy type theory the progression of \LabRef{nLab}{modal operato
 \\
 \stackrel{solidity}{} &&& && & \bot && \bot
 \\
-&&& && & \rightsquigarrow &\dashv& \R & = loc_{\mathbb{R}^{0\vert 1}}& & \stackrel{rheonomic}{}
+&&& && & \rightsquigarrow &\dashv& \R & = loc_{\bbR^{0\vert 1}}& & \stackrel{rheonomic}{}
 \\
 &&& && & \vee &\stackrel{super}{}& \vee
 \\
@@ -1429,7 +1429,7 @@ Including in homotopy type theory the progression of \LabRef{nLab}{modal operato
 \\
 &&& && & \vee && \vee
 \\
-&&& \stackrel{shape}{} && loc_{\mathbb{R}} = &&#643; &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
+&&& \stackrel{shape}{} && loc_{\bbR} = &\esh  &\stackrel{quality}{\dashv}& \flat & / & \overline{\flat}&  \stackrel{content(flat/rational)}{}
 \\
 \stackrel{cohesion}{} &&& && & \bot &\stackrel{gaugemeasure}{}& \bot
 \\
@@ -1443,80 +1443,80 @@ Including in homotopy type theory the progression of \LabRef{nLab}{modal operato
 makes its \LabRef{nLab}{term model} richer: there are now true propositions and generally terms that may be constructed which are not constructible in plain homotopy type theory. These terms reflect \emph{the idea} that is induced by these determinations, in that every \LabRef[interpretation]{nLab}{categorical semantics} of this modal type theory has to realize (externalize) these terms and make these propositions true.
 We now indicate some of these new constructions.
 \hypertarget{maurercartan_forms}{}\paragraph*{{Maurer-Cartan forms}}\label{maurercartan_forms}
-Let $G$ be a an \LabRef{nLab}{∞-group} type. This means that there is specified a pointed connected type $\mathbf{B}G$ and an \LabRef{nLab}{equivalence} $G\simeq \Omega \mathbf{B}G$ with its \LabRef{nLab}{loop space object}. We say that $\mathbf{B}G$ is the \LabRef{nLab}{delooping} of $G$. Notice that all this happens internal to the ambient cohesive homotopy type theory, which makes $\mathbf{B}G$ have the interpretation of the \LabRef{nLab}{moduli ∞-stack} of cohesive $G$-\LabRef{nLab}{principal ∞-bundles}, instead of just the bare homotopy type of the \LabRef{nLab}{classifying space}
+Let $G$ be a an \LabRef{nLab}{∞-group} type. This means that there is specified a pointed connected type $\bfBG$ and an \LabRef{nLab}{equivalence} $G\simeq \Omega \bfBG$ with its \LabRef{nLab}{loop space object}. We say that $\bfBG$ is the \LabRef{nLab}{delooping} of $G$. Notice that all this happens internal to the ambient cohesive homotopy type theory, which makes $\bfBG$ have the interpretation of the \LabRef{nLab}{moduli ∞-stack} of cohesive $G$-\LabRef{nLab}{principal ∞-bundles}, instead of just the bare homotopy type of the \LabRef{nLab}{classifying space}
 \begin{displaymath}
-B G \simeq &#643; \mathbf{B}G
+B G \simeq \esh  \bfBG
 \end{displaymath}
-This richer geometric structure is what the boldface in $\mathbf{B}G$ is meant to remind us of.
+This richer geometric structure is what the boldface in $\bfBG$ is meant to remind us of.
 \begin{defn}
 \label{}\hypertarget{}{}
-Denote the first and second \LabRef{nLab}{homotopy fiber} of the comparison map $\flat \mathbf{B}\mathbb{G} \to \mathbf{B}\mathbb{G}$ of the \LabRef[flat moment]{nLab}{flat modality} of this as follows.
+Denote the first and second \LabRef{nLab}{homotopy fiber} of the comparison map $\flat \bfB\bbG \to \bfB\bbG$ of the \LabRef[flat moment]{nLab}{flat modality} of this as follows.
 \begin{displaymath}
 G
 \stackrel{\theta_G}{\longrightarrow}
-\flat_{dR}\mathbf{B}G
+\flat_{dR}\bfBG
 \longrightarrow
-\flat \mathbf{B}G
+\flat \bfBG
 \longrightarrow
-\mathbf{B}G
+\bfBG
 \end{displaymath}
 This double homotopy fiber $\theta_G$ has the interpretation of being the \LabRef{nLab}{Maurer-Cartan form} on $G$.
 \end{defn}
 \hypertarget{differential_cohomology}{}\paragraph*{{Differential cohomology}}\label{differential_cohomology}
-Let $\mathbb{G}$ be an \LabRef{nLab}{abelian ∞-group} type. The group of \LabRef[phases]{nLab}{phase and phase space in physics}.
-This being abelian just means that there is specified a \LabRef{nLab}{delooping} type $\mathbf{B} \mathbb{G}$ and an equivalence $\mathbb{G}\simeq \Omega \mathbf{B} \mathbb{G}$ with its \LabRef{nLab}{loop space object}, and that with $\mathbf{B}^0 \mathbb{G} \coloneqq \mathbb{G}$ we have inductively that $\mathbf{B}^n \mathbb{G}$ is itself equipped with the structure of an \LabRef{nLab}{abelian ∞-group}.
-For the present purpose we will assume in addition that $\mathbb{G}$ is \LabRef{nLab}{0-truncated}, which makes it simply an \LabRef{nLab}{abelian group}.
+Let $\bbG$ be an \LabRef{nLab}{abelian ∞-group} type. The group of \LabRef[phases]{nLab}{phase and phase space in physics}.
+This being abelian just means that there is specified a \LabRef{nLab}{delooping} type $\bfB \bbG$ and an equivalence $\bbG\simeq \Omega \bfB \bbG$ with its \LabRef{nLab}{loop space object}, and that with $\bfB^0 \bbG \coloneqq \bbG$ we have inductively that $\bfB^n \bbG$ is itself equipped with the structure of an \LabRef{nLab}{abelian ∞-group}.
+For the present purpose we will assume in addition that $\bbG$ is \LabRef{nLab}{0-truncated}, which makes it simply an \LabRef{nLab}{abelian group}.
 \begin{defn}
 \label{}\hypertarget{}{}
-A \LabRef{nLab}{Hodge filtration} is a compatible system of \LabRef{nLab}{filtrations} of $\flat \mathbf{B}^2\mathbb{G}$ of the form
+A \LabRef{nLab}{Hodge filtration} is a compatible system of \LabRef{nLab}{filtrations} of $\flat \bfB^2\bbG$ of the form
 \begin{displaymath}
 \mathbf{\Omega}^{2}_{cl}
 \to
 \cdots
 \to
-\flat_{dR} \mathbf{B}^2 \mathbb{G}
+\flat_{dR} \bfB^2 \bbG
 \to
-\flat \mathbf{B}^2 \mathbb{G}
+\flat \bfB^2 \bbG
 \end{displaymath}
 with 0-truncated extensive $\mathbf{\Omega}^{2}_{cl}$.
 \end{defn}
 \begin{defn}
 \label{BGconn}\hypertarget{BGconn}{}
-Given a \LabRef{nLab}{Hodge filtration}, write $\mathbf{B}\mathbb{G}_{conn}$ for the homotopy fiber product
+Given a \LabRef{nLab}{Hodge filtration}, write $\bfB\bbG_{conn}$ for the homotopy fiber product
 \begin{displaymath}
-\mathbf{B}\mathbb{G}_{conn}
+\bfB\bbG_{conn}
 \coloneqq
-\mathbf{B}\mathbb{G}\underset{\flat_{dR}\mathbf{B}^2\mathbb{G}}{\times} \mathbf{\Omega}^2_{cl}
+\bfB\bbG\underset{\flat_{dR}\bfB^2\bbG}{\times} \mathbf{\Omega}^2_{cl}
 \end{displaymath}
-of the Maurer-Cartan form $\theta_{\mathbf{B}\mathbb{G}}$ with the last Holdge filtration stage.
+of the Maurer-Cartan form $\theta_{\bfB\bbG}$ with the last Holdge filtration stage.
 \end{defn}
 \begin{prop}
 \label{}\hypertarget{}{}
-The decomposition of $\mathbf{B}\mathbb{G}_{conn}$ into its $(&#643;, \overline{\flat})$-moments according to prop \ref{TheHexagon} reproduces the defining Cartesian sqare of def. \ref{BGconn}:
+The decomposition of $\bfB\bbG_{conn}$ into its $(\esh , \overline{\flat})$-moments according to prop \ref{TheHexagon} reproduces the defining Cartesian sqare of def. \ref{BGconn}:
 \begin{displaymath}
 \itexarray{
 && \mathbf{\Omega}^2_{cl}
 \\
 & \nearrow && \searrow
 \\
-\mathbf{B}\mathbb{G}_{conn}
+\bfB\bbG_{conn}
 && &&
-\flat_{dR}\mathbf{B}^2\mathbb{G}
+\flat_{dR}\bfB^2\bbG
 \\
 & \searrow && \nearrow && \searrow
 \\
-&& \mathbf{B}\mathbb{G} && &&  \flat_{dR}B \mathbb{G}
+&& \bfB\bbG && &&  \flat_{dR}B \bbG
 \\
 && & \searrow && \nearrow
 \\
-&& && B \mathbb{G}
+&& && B \bbG
 }
 \end{displaymath}
 \end{prop}
 \hypertarget{WZWTerms}{}\paragraph*{{WZW terms}}\label{WZWTerms}
 A map
 \begin{displaymath}
-\mathbf{c} \colon \mathbf{B}G \longrightarrow \mathbf{B}^{p+2} \mathbb{G}
+\mathbf{c} \colon \bfBG \longrightarrow \bfB^{p+2} \bbG
 \end{displaymath}
 is equivalently a \LabRef{nLab}{cocycle} of degree $p+2$ in the \LabRef{nLab}{group cohomology} of $G$.
 \begin{defn}
@@ -1530,39 +1530,39 @@ Given a group cocycle $\mathbf{c}$ and a \LabRef{nLab}{Hodge filtration}, then a
 \\
 \downarrow && \downarrow
 \\
-\flat_{dR} \mathbf{B}G
+\flat_{dR} \bfBG
 &\stackrel{\flat_{dR}\mathbf{c}}{\longrightarrow}&
-\flat_{dR} \mathbf{B}^2 \mathbb{G}
+\flat_{dR} \bfB^2 \bbG
 }
 \end{displaymath}
 Given this, write
 \begin{displaymath}
 \tilde G
-\coloneqq G \underset{\flat_{dR}\mathbf{B}G}{\times} \mathbf{\Omega}^1_{flat}(-,\mathfrak{g})
+\coloneqq G \underset{\flat_{dR}\bfBG}{\times} \mathbf{\Omega}^1_{flat}(-,\mathfrak{g})
 \end{displaymath}
 \end{defn}
 \begin{example}
 \label{}\hypertarget{}{}
-For $G$ 0-truncated, then the canonical choice is $\mathbf{\Omega}^1_{flat}(-,\mathfrak{g}) = \flat_{dR}\mathbf{B}G$. With this one has $\tilde G \simeq G$.
-On the other extreme, for $G = \mathbf{B}^{p+1}\mathbb{G}$ then the canonical choice is $\mathbf{\Omega}^1_{flat}(-,\mathfrak{g}) = \mathbf{\Omega}^{p+2}_{cl}$. With this one has $\tilde G \simeq \mathbf{B}^{p+1}\mathbb{G}_{conn}$.
-This means that in general $\tilde G$ is a homotopy fiber product of $G$ with $\mathbf{B}^{p+1}\mathbb{G}_{conn}$, hence that a map to out of some $\Sigma$ is a pair of a map $\Sigma \to G$ and of $(p+1)$-form data on $\Sigma$. This is the kind of \LabRef[field]{nLab}{field (physics)} content of higher \LabRef{nLab}{gauged WZW models}.
+For $G$ 0-truncated, then the canonical choice is $\mathbf{\Omega}^1_{flat}(-,\mathfrak{g}) = \flat_{dR}\bfBG$. With this one has $\tilde G \simeq G$.
+On the other extreme, for $G = \bfB^{p+1}\bbG$ then the canonical choice is $\mathbf{\Omega}^1_{flat}(-,\mathfrak{g}) = \mathbf{\Omega}^{p+2}_{cl}$. With this one has $\tilde G \simeq \bfB^{p+1}\bbG_{conn}$.
+This means that in general $\tilde G$ is a homotopy fiber product of $G$ with $\bfB^{p+1}\bbG_{conn}$, hence that a map to out of some $\Sigma$ is a pair of a map $\Sigma \to G$ and of $(p+1)$-form data on $\Sigma$. This is the kind of \LabRef[field]{nLab}{field (physics)} content of higher \LabRef{nLab}{gauged WZW models}.
 \end{example}
 \begin{prop}
 \label{WZWTermFromCocycle}\hypertarget{WZWTermFromCocycle}{}
-Given a group cocycle $\mathbf{c} \colon \mathbf{B}G \to \mathbf{B}^{p+2}$ and a form refinement $\mu$ as in def. \ref{FormRefinementOfCocycle}, then there exists an essentially unique \LabRef{nLab}{prequantization}
+Given a group cocycle $\mathbf{c} \colon \bfBG \to \bfB^{p+2}$ and a form refinement $\mu$ as in def. \ref{FormRefinementOfCocycle}, then there exists an essentially unique \LabRef{nLab}{prequantization}
 \begin{displaymath}
-\mathbf{L}_{WZW}
+\bfL_{WZW}
 \colon
-\tilde G \longrightarrow \mathbf{B}^{p+1}_{conn}
+\tilde G \longrightarrow \bfB^{p+1}_{conn}
 \end{displaymath}
-of $\mu(\theta_G)$ whose underlying $\mathbf{B}^p\mathbb{G}$-\LabRef{nLab}{principal ∞-bundle} is $\Omega \mathbf{c}$.
+of $\mu(\theta_G)$ whose underlying $\bfB^p\bbG$-\LabRef{nLab}{principal ∞-bundle} is $\Omega \mathbf{c}$.
 We call this the \LabRef{nLab}{WZW term} whose \LabRef{nLab}{curvature} is $\mu(\theta_G)$.
 \end{prop}
 \hypertarget{Manifolds}{}\paragraph*{{$V$-Manifolds}}\label{Manifolds}
 See also at \LabRef{nLab}{geometry of physics -- manifolds and orbifolds}.
 \begin{defn}
 \label{LocalDiffeomorphisms}\hypertarget{LocalDiffeomorphisms}{}
-Given $X,Y\in \mathbf{H}$ then a morphism $f \colon X\longrightarrow Y$ is a \LabRef{nLab}{local diffeomorphism} if its naturality square of the \LabRef{nLab}{infinitesimal shape modality}
+Given $X,Y\in \bfH$ then a morphism $f \colon X\longrightarrow Y$ is a \LabRef{nLab}{local diffeomorphism} if its naturality square of the \LabRef{nLab}{infinitesimal shape modality}
 \begin{displaymath}
 \itexarray{
 X &\longrightarrow& \Im X
@@ -1586,16 +1586,16 @@ T X &\longrightarrow& X
 T Y &\longrightarrow& Y
 }
 \end{displaymath}
-To see this, notice by the discussion at \LabRef{nLab}{synthetic differential geometry} that for $D$ an \LabRef{nLab}{infinitesimally thickened point}, then for any $X \in \mathbf{H}$ the \LabRef{nLab}{mapping space} $[D,X]$ is the \LabRef{nLab}{jet bundle} of $X$ with jets of order as encoded by the infinitesimal order of $D$. In particular if $\mathbb{D}^1(1)$ is the first order infinitesimal interval defined by the fact that its \LabRef{nLab}{algebra of functions} is the \LabRef{nLab}{algebra of dual numbers} $C^\infty(\mathbb{D}^1(1)) = (\mathbb{R} \oplus \epsilon \mathbb{R})/(\epsilon^2)$, and $X$ is a \LabRef{nLab}{smooth manifold}, then
+To see this, notice by the discussion at \LabRef{nLab}{synthetic differential geometry} that for $D$ an \LabRef{nLab}{infinitesimally thickened point}, then for any $X \in \bfH$ the \LabRef{nLab}{mapping space} $[D,X]$ is the \LabRef{nLab}{jet bundle} of $X$ with jets of order as encoded by the infinitesimal order of $D$. In particular if $\bbD^1(1)$ is the first order infinitesimal interval defined by the fact that its \LabRef{nLab}{algebra of functions} is the \LabRef{nLab}{algebra of dual numbers} $C^\infty(\bbD^1(1)) = (\bbR \oplus \epsilon \bbR)/(\epsilon^2)$, and $X$ is a \LabRef{nLab}{smooth manifold}, then
 \begin{displaymath}
-[\mathbb{D}^1(1), X]\simeq T X
+[\bbD^1(1), X]\simeq T X
 \end{displaymath}
-is the ordinary \LabRef{nLab}{tangent bundle} of $X$. Now use that the \LabRef{nLab}{internal hom} $[D,-]$ preserves \LabRef{nLab}{limits} in its second argument, and that, by the hom-adjunction, $\mathbf{H}(U, [D,X]) \simeq \mathbf{H}(U \times D, X)$ and finally use that $\mathbf{H}(U \times D, \Im X)\simeq \mathbf{H}(\Re(U \times D), X)\simeq \mathbf{H}(U,X)$.
+is the ordinary \LabRef{nLab}{tangent bundle} of $X$. Now use that the \LabRef{nLab}{internal hom} $[D,-]$ preserves \LabRef{nLab}{limits} in its second argument, and that, by the hom-adjunction, $\bfH(U, [D,X]) \simeq \bfH(U \times D, X)$ and finally use that $\bfH(U \times D, \Im X)\simeq \bfH(\Re(U \times D), X)\simeq \bfH(U,X)$.
 \end{remark}
-Let now $V \in \mathbf{H}$ be given, equipped with the structure of a \LabRef{nLab}{group} (\LabRef{nLab}{infinity-group}).
+Let now $V \in \bfH$ be given, equipped with the structure of a \LabRef{nLab}{group} (\LabRef{nLab}{infinity-group}).
 \begin{defn}
 \label{VManifold}\hypertarget{VManifold}{}
-A \emph{$V$-\LabRef{nLab}{manifold}} is an $X \in \mathbf{H}$ such that there exists a \emph{$V$-\LabRef{nLab}{atlas}}, namely a \LabRef{nLab}{correspondence} of the form
+A \emph{$V$-\LabRef{nLab}{manifold}} is an $X \in \bfH$ such that there exists a \emph{$V$-\LabRef{nLab}{atlas}}, namely a \LabRef{nLab}{correspondence} of the form
 \begin{displaymath}
 \itexarray{
 && U
@@ -1640,7 +1640,7 @@ The bosonic space $\stackrel{\rightsquigarrow}{X}$ underlying a $V$-manifold $X$
 \hypertarget{FrameBundles}{}\paragraph*{{Frame bundles}}\label{FrameBundles}
 \begin{defn}
 \label{InfinitesimalDiskBundle}\hypertarget{InfinitesimalDiskBundle}{}
-Given $X \in \mathbf{H}$, its \emph{infinitesimal disk bundle} $T_{inf} X\to X$ is the \LabRef{nLab}{pullback} of the \LabRef[unit]{nLab}{unit of a monad} of the \LabRef{nLab}{infinitesimal shape modality} along itself
+Given $X \in \bfH$, its \emph{infinitesimal disk bundle} $T_{inf} X\to X$ is the \LabRef{nLab}{pullback} of the \LabRef[unit]{nLab}{unit of a monad} of the \LabRef{nLab}{infinitesimal shape modality} along itself
 \begin{displaymath}
 \itexarray{
 T_{inf} X &\stackrel{}{\longrightarrow}& X
@@ -1650,17 +1650,17 @@ T_{inf} X &\stackrel{}{\longrightarrow}& X
 X &\longrightarrow& \Im X
 }
 \end{displaymath}
-Given a point $x \colon  \ast \to X$, then the \LabRef{nLab}{infinitesimal neighbourhood} $\ast \to \mathbb{D}_x \to X$ of that point is the further \LabRef{nLab}{pullback} of the infinitesimal disk bundle to this point:
+Given a point $x \colon  \ast \to X$, then the \LabRef{nLab}{infinitesimal neighbourhood} $\ast \to \bbD_x \to X$ of that point is the further \LabRef{nLab}{pullback} of the infinitesimal disk bundle to this point:
 \begin{displaymath}
 \itexarray{
-\mathbb{D}_x &\longrightarrow & T_{inf} X &\stackrel{}{\longrightarrow}& X
+\bbD_x &\longrightarrow & T_{inf} X &\stackrel{}{\longrightarrow}& X
 \\
 \downarrow && \downarrow && \downarrow
 \\
 \ast &\stackrel{x}{\longrightarrow} & X &\longrightarrow& \Im X
 }
 \end{displaymath}
-More generally, for $k \in \mathbb{N}$ then the $k$th order infinitesimal disk bundle is
+More generally, for $k \in \bbN$ then the $k$th order infinitesimal disk bundle is
 \begin{displaymath}
 \itexarray{
 T_{(k)} X &\stackrel{}{\longrightarrow}& \Im_{(k)} X
@@ -1673,7 +1673,7 @@ X &\longrightarrow& \Im X
 and accordingly the $k$th order infinitsimal neighbourhood is
 \begin{displaymath}
 \itexarray{
-\mathbb{D}(k)_x &\longrightarrow & T_{(k)} X &\stackrel{}{\longrightarrow}& \Im_{(k)}X
+\bbD(k)_x &\longrightarrow & T_{(k)} X &\stackrel{}{\longrightarrow}& \Im_{(k)}X
 \\
 \downarrow && \downarrow && \downarrow
 \\
@@ -1684,7 +1684,7 @@ and accordingly the $k$th order infinitsimal neighbourhood is
 It is natural not to pick any point, but to collect all infinitesimal disks around \emph{all} the points of a space:
 \begin{defn}
 \label{RelativeFlat}\hypertarget{RelativeFlat}{}
-The \LabRef{nLab}{relative flat modality} is the operation $\flat^{rel}$ that sends $X \in \mathbf{H}$ to the \LabRef{nLab}{homotopy pullback}
+The \LabRef{nLab}{relative flat modality} is the operation $\flat^{rel}$ that sends $X \in \bfH$ to the \LabRef{nLab}{homotopy pullback}
 \begin{displaymath}
 \itexarray{
 \flat^{rel} &\longrightarrow& X
@@ -1694,7 +1694,7 @@ The \LabRef{nLab}{relative flat modality} is the operation $\flat^{rel}$ that se
 \flat X &\longrightarrow& \Im X
 }
 \end{displaymath}
-More generally, for any $k \in \mathbb{N}$ then the \emph{order $k$ relative flat modality} is the pullback in
+More generally, for any $k \in \bbN$ then the \emph{order $k$ relative flat modality} is the pullback in
 \begin{displaymath}
 \itexarray{
 \flat^{rel}_{(k)} &\longrightarrow& \Im_{(k)} X
@@ -1707,9 +1707,9 @@ More generally, for any $k \in \mathbb{N}$ then the \emph{order $k$ relative fla
 \end{defn}
 \begin{defn}
 \label{GeneralLinearGroup}\hypertarget{GeneralLinearGroup}{}
-The \LabRef{nLab}{general linear group} $GL(V)$ is the \LabRef{nLab}{automorphism infinity-group} of the \LabRef{nLab}{infinitesimal neighbourhood} $\mathbb{D}^V_e$, def. \ref{InfinitesimalDiskBundle}, of the neutral element $e \colon \ast \to \mathbb{D}^V_e \to V$:
+The \LabRef{nLab}{general linear group} $GL(V)$ is the \LabRef{nLab}{automorphism infinity-group} of the \LabRef{nLab}{infinitesimal neighbourhood} $\bbD^V_e$, def. \ref{InfinitesimalDiskBundle}, of the neutral element $e \colon \ast \to \bbD^V_e \to V$:
 \begin{displaymath}
-GL(V) \coloneqq \mathbf{Aut}(\mathbb{D}^V_e)
+GL(V) \coloneqq \mathbf{Aut}(\bbD^V_e)
 \end{displaymath}
 \end{defn}
 \begin{prop}
@@ -1721,7 +1721,7 @@ T_{inf} X &\longrightarrow& V/GL(V)
 \\
 \downarrow && \downarrow
 \\
-X &\stackrel{\tau_X}{\longrightarrow}& \mathbf{B} GL(V)
+X &\stackrel{\tau_X}{\longrightarrow}& \bfB GL(V)
 }
 
 \itexarray{
@@ -1729,30 +1729,30 @@ Fr(X) &\longrightarrow& \ast
 \\
 \downarrow && \downarrow
 \\
-X &\stackrel{\tau_X}{\longrightarrow}& \mathbf{B} GL(V)
+X &\stackrel{\tau_X}{\longrightarrow}& \bfB GL(V)
 }
 \end{displaymath}
 \end{prop}
 \begin{defn}
 \label{Framing}\hypertarget{Framing}{}
-A \LabRef{nLab}{framing} of a $V$-manifold is a trivialization of its \LabRef{nLab}{frame bundle}, prop. \ref{FrameBundle}, hence a diagram in $\mathbf{H}$ of the form
+A \LabRef{nLab}{framing} of a $V$-manifold is a trivialization of its \LabRef{nLab}{frame bundle}, prop. \ref{FrameBundle}, hence a diagram in $\bfH$ of the form
 \begin{displaymath}
 \itexarray{
 X && \longrightarrow && \ast
 \\
 & \searrow &\swArrow& \swarrow
 \\
-&& \mathbf{B}GL(V)
+&& \bfBGL(V)
 }
 \end{displaymath}
 \end{defn}
 \begin{remark}
 \label{ModuliForFramings}\hypertarget{ModuliForFramings}{}
-It is useful to express def. \ref{Framing} in terms of the \LabRef{nLab}{slice topos} $\mathbf{H}_{/\mathbf{B}GL(V)}$. Write $V\mathbf{Frame}\in \mathbf{H}_{/\mathbf{B}GL(V)}$ for the canonical morphism $\ast \to \mathbf{B}GL(V)$ regarded as an object in the slice. Then a framing as in def. \ref{Framing} is equivalently a morphism
+It is useful to express def. \ref{Framing} in terms of the \LabRef{nLab}{slice topos} $\bfH_{/\bfBGL(V)}$. Write $V\mathbf{Frame}\in \bfH_{/\bfBGL(V)}$ for the canonical morphism $\ast \to \bfBGL(V)$ regarded as an object in the slice. Then a framing as in def. \ref{Framing} is equivalently a morphism
 \begin{displaymath}
 \phi \colon \tau_X \longrightarrow V\mathbf{Frame}
 \end{displaymath}
-in $\mathbf{H}_{/\mathbf{B}GL(V)}$.
+in $\bfH_{/\bfBGL(V)}$.
 \end{remark}
 \begin{prop}
 \label{LeftTranslationFraming}\hypertarget{LeftTranslationFraming}{}
@@ -1769,28 +1769,28 @@ X && \stackrel{}{\longrightarrow} && G
 \\
 & {}_{\mathllap{\tau_X}}\searrow &\swArrow& \swarrow
 \\
-&& \mathbf{B}GL(V)
+&& \bfBGL(V)
 }
 \end{displaymath}
 \end{defn}
 \begin{remark}
 \label{ModuliForGStructures}\hypertarget{ModuliForGStructures}{}
-As in remark \ref{ModuliForFramings}, it is useful to express def. \ref{GStructure} in terms of the \LabRef{nLab}{slice topos} $\mathbf{H}_{/\mathbf{B}GL(V)}$. Write $G\mathbf{Struc}\in \mathbf{H}_{/\mathbf{B}GL(V)}$ for the given map $\mathbf{B}G\to \mathbf{B}GL(V)$ regarded as an object in the slice. Then a $G$-structure according to def. \ref{GStructure} is equivalently a choice of morphism in $\mathbf{H}_{/\mathbf{B}GL(V)}$ of the form
+As in remark \ref{ModuliForFramings}, it is useful to express def. \ref{GStructure} in terms of the \LabRef{nLab}{slice topos} $\bfH_{/\bfBGL(V)}$. Write $G\mathbf{Struc}\in \bfH_{/\bfBGL(V)}$ for the given map $\bfBG\to \bfBGL(V)$ regarded as an object in the slice. Then a $G$-structure according to def. \ref{GStructure} is equivalently a choice of morphism in $\bfH_{/\bfBGL(V)}$ of the form
 \begin{displaymath}
 \mathbf{c} \colon \tau_X \longrightarrow G\mathbf{Struc}
 \end{displaymath}
-In other words, $G\mathbf{Struc} \in \mathbf{H}_{/\mathbf{B}GL(v)}$ is the \LabRef{nLab}{moduli stack} for $G$-structures.
+In other words, $G\mathbf{Struc} \in \bfH_{/\bfBGL(v)}$ is the \LabRef{nLab}{moduli stack} for $G$-structures.
 \end{remark}
 \begin{example}
 \label{GStructureFromLeftTranslationFraming}\hypertarget{GStructureFromLeftTranslationFraming}{}
-A choice of \LabRef{nLab}{framing} $\phi$, def. \ref{Framing}, on a $V$-manifold $X$ induces a \LabRef{nLab}{G-structure} for any $G$, given by the \LabRef{nLab}{pasting diagram} in $\mathbf{H}$
+A choice of \LabRef{nLab}{framing} $\phi$, def. \ref{Framing}, on a $V$-manifold $X$ induces a \LabRef{nLab}{G-structure} for any $G$, given by the \LabRef{nLab}{pasting diagram} in $\bfH$
 \begin{displaymath}
 \itexarray{
 X &\longrightarrow& \ast &\longrightarrow&
 \\
 & \searrow & \downarrow & \swarrow
 \\
-&& \mathbf{B}GL(V)
+&& \bfBGL(V)
 }
 \end{displaymath}
 or equivalently, via remark \ref{ModuliForFramings} and remark \ref{ModuliForGStructures}, given as the \LabRef{nLab}{composition}
@@ -1802,7 +1802,7 @@ We call this the \emph{left invariant $G$-structure}.
 \end{example}
 \begin{defn}
 \label{IntegrabilityOfGStructure}\hypertarget{IntegrabilityOfGStructure}{}
-For $X$ a $V$-manifold, then a \LabRef{nLab}{G-structure} on $X$, def. \ref{GStructure}, is \LabRef[integrable]{nLab}{integrable G-structure} if for any $V$-\LabRef{nLab}{atlas} $V \leftarrow U \rightarrow X$ the pullback of the $G$-structure on $X$ to $V$ is equivalent there to the left-inavariant $G$-structure on $V$ of example \ref{GStructureFromLeftTranslationFraming}, i.e. if we have an \LabRef{nLab}{correspondence} in the double \LabRef{nLab}{slice topos} $(\mathbf{H}_{/\mathbf{B}GL(V)})_{/G\mathbf{Struc}}$ of the form
+For $X$ a $V$-manifold, then a \LabRef{nLab}{G-structure} on $X$, def. \ref{GStructure}, is \LabRef[integrable]{nLab}{integrable G-structure} if for any $V$-\LabRef{nLab}{atlas} $V \leftarrow U \rightarrow X$ the pullback of the $G$-structure on $X$ to $V$ is equivalent there to the left-inavariant $G$-structure on $V$ of example \ref{GStructureFromLeftTranslationFraming}, i.e. if we have an \LabRef{nLab}{correspondence} in the double \LabRef{nLab}{slice topos} $(\bfH_{/\bfBGL(V)})_{/G\mathbf{Struc}}$ of the form
 \begin{displaymath}
 \itexarray{
 && \tau_U
@@ -1834,7 +1834,7 @@ Finally, the $G$-structure is \emph{order $k$ infinitesimally integrable} if thi
 \end{defn}
 \begin{defn}
 \label{CartanGeometry}\hypertarget{CartanGeometry}{}
-Consider an \LabRef{nLab}{infinity-action} of $GL(V)$ on $V$ which linearizes to the canonical $GL(V)$-action on $\mathbb{D}^V_e$ by def. \ref{GeneralLinearGroup}. Form the \LabRef{nLab}{semidirect product} $GL(V) \rtimes V$. Consider any group homomorphism $G\to GL(V)$.
+Consider an \LabRef{nLab}{infinity-action} of $GL(V)$ on $V$ which linearizes to the canonical $GL(V)$-action on $\bbD^V_e$ by def. \ref{GeneralLinearGroup}. Form the \LabRef{nLab}{semidirect product} $GL(V) \rtimes V$. Consider any group homomorphism $G\to GL(V)$.
 A \emph{$(G\to G\rtimes V)$-\LabRef{nLab}{Cartan geometry}} is a $V$-manifold $X$ equipped with a $G$-structure, def. \ref{GStructure}. The Cartan geometry is called \emph{(infinitesimally) integrable} if the $G$-structure is so, according to def. \ref{IntegrabilityOfGStructure}.
 \end{defn}
 \begin{remark}
@@ -1846,15 +1846,15 @@ Indeed, this is a phenomenon known as the \LabRef{nLab}{torsion constraints in s
 \hypertarget{definite_forms}{}\paragraph*{{Definite forms}}\label{definite_forms}
 \begin{defn}
 \label{DefiniteGlobalizationofWZWTerm}\hypertarget{DefiniteGlobalizationofWZWTerm}{}
-Given a \LabRef[group cocycle]{nLab}{infinity-group cohomology} $\mathbf{c} \colon \mathbf{B}G\to\mathbf{B}^{p+2}\mathbb{G}$ with \LabRef{nLab}{WZW term}, prop. \ref{WZWTermFromCocycle}, of the form
+Given a \LabRef[group cocycle]{nLab}{infinity-group cohomology} $\mathbf{c} \colon \bfBG\to\bfB^{p+2}\bbG$ with \LabRef{nLab}{WZW term}, prop. \ref{WZWTermFromCocycle}, of the form
 \begin{displaymath}
-\mathbf{L}_{WZW}^V
+\bfL_{WZW}^V
 \colon
-V \longrightarrow \mathbf{B}^{p+1}\mathbb{G}
+V \longrightarrow \bfB^{p+1}\bbG
 \end{displaymath}
-and given a $V$-manifold $X$ we say that an \emph{integrable globalization} of $\mathbf{L}_{WZW}^V$ over $X$ is a WZW on on $X$
+and given a $V$-manifold $X$ we say that an \emph{integrable globalization} of $\bfL_{WZW}^V$ over $X$ is a WZW on on $X$
 \begin{displaymath}
-\mathbf{L}_{WZW}^X \colonX \longrightarrow \mathbf{B}^{p+1}\mathbb{G}_{conn}
+\bfL_{WZW}^X \colonX \longrightarrow \bfB^{p+1}\bbG_{conn}
 \end{displaymath}
 such that there is a $V$-atlas for $X$
 \begin{displaymath}
@@ -1866,7 +1866,7 @@ such that there is a $V$-atlas for $X$
 V && && X
 }
 \end{displaymath}
-which extends to a \LabRef{nLab}{correspondence} between $\mathbf{L}_{WZW}$ and $\mathbf{L}_{WZW}^X$
+which extends to a \LabRef{nLab}{correspondence} between $\bfL_{WZW}$ and $\bfL_{WZW}^X$
 \begin{displaymath}
 \itexarray{
 && U
@@ -1875,25 +1875,25 @@ which extends to a \LabRef{nLab}{correspondence} between $\mathbf{L}_{WZW}$ and 
 \\
 V && \swArrow && X
 \\
-& {}_{\mathllap{\mathbf{L}_{WZW}^V}}\searrow && \swarrow_{\mathrlap{\mathbf{L}_{WZW}^X}}
+& {}_{\mathllap{\bfL_{WZW}^V}}\searrow && \swarrow_{\mathrlap{\bfL_{WZW}^X}}
 \\
-&& \mathbf{B}^{p+1}\mathbb{G}_{conn}
+&& \bfB^{p+1}\bbG_{conn}
 }
 \end{displaymath}
-Accordingly, as in def. \ref{IntegrabilityOfGStructure} we say that $\mathbf{L}_{WZW}^X$ is an \emph{infinitesimally integrable globalization} if this correspondence exists after restriction along the inclusion $\flat^{rel} U \to U$ of the \LabRef{nLab}{infinitesimal disks} in $X$ and such that
+Accordingly, as in def. \ref{IntegrabilityOfGStructure} we say that $\bfL_{WZW}^X$ is an \emph{infinitesimally integrable globalization} if this correspondence exists after restriction along the inclusion $\flat^{rel} U \to U$ of the \LabRef{nLab}{infinitesimal disks} in $X$ and such that
 \begin{enumerate}%
-\item the induced section of the \LabRef[associated]{nLab}{associated infinity-bundle} $[\mathbb{D}(1)^V,\mathbf{B}^{p+1}\mathbb{G}_{conn}]$-\LabRef{nLab}{fiber infinity-bundle} is \emph{definite} on the restriction $\mathbf{L}_{WZW}^{\mathbb{D}}$ of $\mathbf{L}_{WZW}^V$ to the infinitesimal disk;
-\item also the underlying cocycle is definite, in that the infinitesimal disk bundle lifts to an $\mathbb{D}^V(1)$-\LabRef{nLab}{gerbe} (for the induced group structure on $\mathbb{D}^V(1)$).
+\item the induced section of the \LabRef[associated]{nLab}{associated infinity-bundle} $[\bbD(1)^V,\bfB^{p+1}\bbG_{conn}]$-\LabRef{nLab}{fiber infinity-bundle} is \emph{definite} on the restriction $\bfL_{WZW}^{\bbD}$ of $\bfL_{WZW}^V$ to the infinitesimal disk;
+\item also the underlying cocycle is definite, in that the infinitesimal disk bundle lifts to an $\bbD^V(1)$-\LabRef{nLab}{gerbe} (for the induced group structure on $\bbD^V(1)$).
 \end{enumerate}
 \end{defn}
-If $\mathbf{B}^{p+1}\mathbb{G}_{conn}$ had no \LabRef{nLab}{higher gauge transformations}, then this would already ensure that such a globalization globalizes $\mathbf{L}_{WZW}^V$ locally cohesively, but here in \LabRef{nLab}{higher differential geometry} this \LabRef{nLab}{property} becomes genuine \LabRef{nLab}{structure} and hence we need to demand it. There is an axiomatic way to say this (see \hyperlink{dcct}{dcct} for details) and if this is imposed then we say that $\mathbf{L}_{WZW}^X$ is a \LabRef[definite globalization]{nLab}{definite globalization of WZW term} of $\mathbf{L}_{WZW}^V$.
+If $\bfB^{p+1}\bbG_{conn}$ had no \LabRef{nLab}{higher gauge transformations}, then this would already ensure that such a globalization globalizes $\bfL_{WZW}^V$ locally cohesively, but here in \LabRef{nLab}{higher differential geometry} this \LabRef{nLab}{property} becomes genuine \LabRef{nLab}{structure} and hence we need to demand it. There is an axiomatic way to say this (see \hyperlink{dcct}{dcct} for details) and if this is imposed then we say that $\bfL_{WZW}^X$ is a \LabRef[definite globalization]{nLab}{definite globalization of WZW term} of $\bfL_{WZW}^V$.
 \begin{prop}
 \label{DefiniteGlobalizationsToGStructure}\hypertarget{DefiniteGlobalizationsToGStructure}{}
-There is a canonical \LabRef{nLab}{(∞,1)-functor} from (infinitesimally integrable) definite globalizations of $\mathbf{L}_{WZW}^X$ over a $V$-manifold $X$ to (infinitesimally integrable) $G$-structures on $X$, def. \ref{GStructure}, for
+There is a canonical \LabRef{nLab}{(∞,1)-functor} from (infinitesimally integrable) definite globalizations of $\bfL_{WZW}^X$ over a $V$-manifold $X$ to (infinitesimally integrable) $G$-structures on $X$, def. \ref{GStructure}, for
 \begin{displaymath}
-G = intens(\mathbf{Stab}_{GL(V)}(\mathbf{L}_{WZW}^{\mathbb{D}^V}))
+G = intens(\mathbf{Stab}_{GL(V)}(\bfL_{WZW}^{\bbD^V}))
 \end{displaymath}
-the \LabRef[intensification]{nlab}{differential concretification} (in the sense \hyperlink{IntensiveExtensive}{above}) of the \LabRef{nLab}{stabilizer ∞-group} of the restriction of $\mathbf{L}_{WZW}^V$ along the inclusion of the typical \LabRef{nLab}{infinitesimal disk} $\mathbb{D}^V \to V$.
+the \LabRef[intensification]{nlab}{differential concretification} (in the sense \hyperlink{IntensiveExtensive}{above}) of the \LabRef{nLab}{stabilizer ∞-group} of the restriction of $\bfL_{WZW}^V$ along the inclusion of the typical \LabRef{nLab}{infinitesimal disk} $\bbD^V \to V$.
 \end{prop}
 \hypertarget{nature}{}\paragraph*{{Nature}}\label{nature}
 Given a \LabRef{nLab}{theory} of physics, made sufficiently precise in \LabRef{nLab}{formal logic}, then an \LabRef[interpretation]{nLab}{categorical semantics} of the theory by a \LabRef{nLab}{model} ``is'' nature as predicted by this theory.
@@ -1901,10 +1901,10 @@ For instance if we considered \LabRef{nLab}{Einstein gravity} to be the theory o
 Above we saw that cohesive (elastic) homotopy type theory contains \LabRef{nLab}{Cartan geometry}, hence in particular \LabRef{nLab}{pseudo-Riemannian geometry} in its idea, as well as \LabRef{nLab}{gauge theory} and hence we accordingly find models of nature here.
 Recall specifically that
 \begin{enumerate}%
-\item From prop. \ref{WZWTermFromCocycle} we have that group cocycles $\mathbf{c}\colon \mathbf{B}V \longrightarrow \mathbf{B}^{p+2}\mathbb{G}$ of degree $p+2$ induce \LabRef{nLab}{WZW terms} in that degree and hence the \LabRef[WZW]{nLab}{WZW model} \LabRef{nLab}{sigma model} \LabRef{nLab}{prequantum field theory} on the \LabRef{nLab}{worldvolume} of a \LabRef{nLab}{p-brane} propagating on the ``model \LabRef{nLab}{spacetime}'' $V$.
+\item From prop. \ref{WZWTermFromCocycle} we have that group cocycles $\mathbf{c}\colon \bfBV \longrightarrow \bfB^{p+2}\bbG$ of degree $p+2$ induce \LabRef{nLab}{WZW terms} in that degree and hence the \LabRef[WZW]{nLab}{WZW model} \LabRef{nLab}{sigma model} \LabRef{nLab}{prequantum field theory} on the \LabRef{nLab}{worldvolume} of a \LabRef{nLab}{p-brane} propagating on the ``model \LabRef{nLab}{spacetime}'' $V$.
 \item A second cocycle on the \LabRef{nLab}{infinity-group extension} classified by $\mathbf{c}$ yields a type of $\tilde p$-brane on which these $p$-branes may end;
 \item This structure is naturally generalized to $V$-manifolds $X$ equipped with definite globalizations of these WZW terms, defining $p$-branes propagating on $X$.
-\item The definite globalization of the WZW term $\mathbf{L}_{\mathrm{WZW}}$ induces a $Stab(\mathbf{L}_{WZW})$ structure on $X$ and the requirement that this be infinitesimally integrable is a \LabRef[torsion constraint]{nLab}{torsion of a G-structure} on $X$.
+\item The definite globalization of the WZW term $\bfL_{\mathrm{WZW}}$ induces a $Stab(\bfL_{WZW})$ structure on $X$ and the requirement that this be infinitesimally integrable is a \LabRef[torsion constraint]{nLab}{torsion of a G-structure} on $X$.
 \end{enumerate}
 We now find an externalization of the idea such that
 \begin{enumerate}%
@@ -1925,7 +1925,7 @@ We now spell out the construction of this model and indicate the proof of this s
 Write
 \begin{itemize}%
 \item \LabRef{nLab}{CartSp} for the site of \LabRef{nLab}{Cartesian spaces};
-\item $InfPoint \coloneqq WAlg^{op}$ for the category of first-order \LabRef{nLab}{infinitesimally thickened points} (i.e. the \LabRef[formal duals]{nLab}{abstract duality} of \LabRef{nLab}{commutative algebras} over the \LabRef{nLab}{real numbers} of the form $\mathbb{R}\oplus V$ with $V$ a finite-dimensional square-0 \LabRef{nLab}{nilpotent ideal}).
+\item $InfPoint \coloneqq WAlg^{op}$ for the category of first-order \LabRef{nLab}{infinitesimally thickened points} (i.e. the \LabRef[formal duals]{nLab}{abstract duality} of \LabRef{nLab}{commutative algebras} over the \LabRef{nLab}{real numbers} of the form $\bbR\oplus V$ with $V$ a finite-dimensional square-0 \LabRef{nLab}{nilpotent ideal}).
 \item $SuperPoint \coloneqq WAlg_{super}^{op}$ for the category of \LabRef{nLab}{superpoints}, by which we here mean the \LabRef{nLab}{formal duals} to commutative \LabRef{nLab}{superalgebras} which are super-\LabRef{nLab}{Weil algebras}.
 \end{itemize}
 There are then ``semidirect product'' sites $CartSp \rtimes InfinPoint$ and $CartSp \rtimes SuperPoint$ (whose objects are \LabRef{nLab}{Cartesian products} of the given form inside \LabRef{nLab}{synthetic differential supergeometry} and whose morphisms are all morphisms in that context (not just the product morphisms)).
@@ -1957,9 +1957,9 @@ CartSp \rtimes SuperPoint
 \end{displaymath}
 Here
 \begin{itemize}%
-\item the first inclusion picks the \LabRef{nLab}{terminal object} $\mathbb{R}^0$;
+\item the first inclusion picks the \LabRef{nLab}{terminal object} $\bbR^0$;
 \item the second inclusion is that of \LabRef{nLab}{reduced objects}; the coreflection is \LabRef{nLab}{reduction}, sending an algebra to its \LabRef{nLab}{reduced algebra};
-\item the third inclusion is that of even-graded algebras, the reflection sends a $\mathbb{Z}_2$-graded algebra to its even-graded part, the co-reflection sends a $\mathbb{Z}_2$-graded algebra to its quotient by the ideal generated by its odd part, see at \emph{\href{super+algebra#AdjointsToInclusionOfPlainAlgebra}{superalgebra -- Adjoints to the inclusion of plain algebras}}.
+\item the third inclusion is that of even-graded algebras, the reflection sends a $\bbZ_2$-graded algebra to its even-graded part, the co-reflection sends a $\bbZ_2$-graded algebra to its quotient by the ideal generated by its odd part, see at \emph{\href{super+algebra#AdjointsToInclusionOfPlainAlgebra}{superalgebra -- Adjoints to the inclusion of plain algebras}}.
 \end{itemize}
 Passing to \LabRef{nLab}{(∞,1)-categories of (∞,1)-sheaves}, this yields, via \LabRef{nLab}{(∞,1)-Kan extension}, a sequence of \LabRef{nLab}{adjoint quadruples} as follows:
 \begin{displaymath}
@@ -1988,7 +1988,7 @@ SuperFormalSmooth \infty Grpd
 the total composite labeled $\Delta$ is indeed the \LabRef{nLab}{locally constant infinity-stack}-functor.
 Forming \LabRef{nLab}{adjoint triples} from these \LabRef{nLab}{adjoint quadruples} gives idempotent (co-)monads
 \begin{displaymath}
-&#643; \dashv \flat \dashv \ast
+\esh  \dashv \flat \dashv \ast
 \end{displaymath}
 \begin{displaymath}
 \Re \dashv \Im \dashv \&
@@ -2006,7 +2006,7 @@ With this the rightmost adjoint quadruple gives the \LabRef{nLab}{Aufhebung} of 
 \label{}\hypertarget{}{}
 The model in def. \ref{SupergeometricModel} admits also the refinement of the \LabRef{nLab}{infinitesimal shape modality} to an infinite tower
 \begin{displaymath}
-&#643;
+\esh 
 \lt
 \Im
 =
@@ -2037,7 +2037,7 @@ InfPoint_{(3)}
 \cdots
 InfPoint
 \end{displaymath}
-be the stratification of $InfPoint$ by its \LabRef[full subcategories]{nLab}{full subcategory} on those objects whose coresponding \LabRef{nLab}{Weil algebras}/\LabRef{nlab}{local Artin algebras} are of the form $\mathbb{R} \oplus V$ with $V^k = 0$. Each of these inclusions has \LabRef[coreflection]{nLab}{coreflective subcategory}, given by \LabRef{nLab}{projection} onto the \LabRef{nLab}{quotient} by the ideal $V^k$, as $k$ ranges
+be the stratification of $InfPoint$ by its \LabRef[full subcategories]{nLab}{full subcategory} on those objects whose coresponding \LabRef{nLab}{Weil algebras}/\LabRef{nlab}{local Artin algebras} are of the form $\bbR \oplus V$ with $V^k = 0$. Each of these inclusions has \LabRef[coreflection]{nLab}{coreflective subcategory}, given by \LabRef{nLab}{projection} onto the \LabRef{nLab}{quotient} by the ideal $V^k$, as $k$ ranges
 \end{remark}
 \begin{prop}
 \label{DeterminateNegationsRealized}\hypertarget{DeterminateNegationsRealized}{}
@@ -2045,13 +2045,13 @@ The model in def. \ref{SupergeometricModel} verifies the required determinate ne
 \begin{enumerate}%
 \item determinate negations I:
 \begin{itemize}%
-\item $&#643; \ast \simeq \ast$;
-\item $\flat \to &#643;$ is epi restricted to 0-types;
+\item $\esh  \ast \simeq \ast$;
+\item $\flat \to \esh $ is epi restricted to 0-types;
 \end{itemize}
 \item determinate negations II:
 \begin{itemize}%
-\item $&#643; \simeq loc_{\mathbb{R}}$ for $\mathbb{R} \in SmoothMfd \hookrightarrow SuperFormalSmooth\infty Grpd$ the ordinary \LabRef{nLab}{real line};
-\item $\R \simeq loc_{\mathbb{R}^{0|1}}$ for $\mathbb{R}^{0|1} \in SuperMfd \hookrightarrow SuperFormalSmooth\infty Grpd$ the \LabRef{nLab}{odd line}.
+\item $\esh  \simeq loc_{\bbR}$ for $\bbR \in SmoothMfd \hookrightarrow SuperFormalSmooth\infty Grpd$ the ordinary \LabRef{nLab}{real line};
+\item $\R \simeq loc_{\bbR^{0|1}}$ for $\bbR^{0|1} \in SuperMfd \hookrightarrow SuperFormalSmooth\infty Grpd$ the \LabRef{nLab}{odd line}.
 \end{itemize}
 \end{enumerate}
 \end{prop}
@@ -2068,12 +2068,12 @@ The model in def. \ref{SupergeometricModel} verfies the required Aufhebungen
 \end{prop}
 \begin{proof}
 For the statement $\sharp \emptyset \simeq \emptyset$ consider the following:
-Since the site $S$ of $\mathbf{H} \coloneqq SuperFormalSmooth\infty Grpds$ has a \LabRef{nLab}{terminal object} $\ast$, it follows that for $X\in \mathbf{H}$ any sheaf $X \colon \mathcal{S}^{op}\to Set$ then
+Since the site $S$ of $\bfH \coloneqq SuperFormalSmooth\infty Grpds$ has a \LabRef{nLab}{terminal object} $\ast$, it follows that for $X\in \bfH$ any sheaf $X \colon \calS^{op}\to Set$ then
 \begin{displaymath}
 \flat X \simeq X(\ast)
 \end{displaymath}
 (where we may leave the constant re-embedding implicit, due to it being \LabRef[fully faithful]{nLab}{fully faithful functor}).
-Moreover, for every object $U\in \mathcal{S}$ there exists a morphism $i \colon \ast \to U$ hence for every $X\in \mathbf{H}$ and every $U$ there exists a morphism $i^\ast \colon X(U)\to \flat X$. This means that if $\flat X \simeq \emptyset$ then $X(U) \simeq \emptyset$ for all $U \in \mathcal{S}$ and hence $X\simeq \emptyset$.
+Moreover, for every object $U\in \calS$ there exists a morphism $i \colon \ast \to U$ hence for every $X\in \bfH$ and every $U$ there exists a morphism $i^\ast \colon X(U)\to \flat X$. This means that if $\flat X \simeq \emptyset$ then $X(U) \simeq \emptyset$ for all $U \in \calS$ and hence $X\simeq \emptyset$.
 We now show that this condition is equivalent to the required Aufhebung:
 Generally, given a \LabRef{nLab}{topos} equipped with a \LabRef{nLab}{level of a topos} given by an \LabRef{nLab}{adjoint modality} $(\Box\dashv \bigcirc) \coloneqq (\flat \dashv \sharp)$, then the condition $\sharp \emptyset \simeq \emptyset$ is equivalent to $(\flat X \simeq \emptyset) \Leftrightarrow (X \simeq \emptyset)$.
 Because: in a topos the \LabRef{nLab}{initial object} $\emptyset$ is a \LabRef{nLab}{strict initial object}, and hence $(X \simeq \emptyset) \simeq (X \to \emptyset)$. Therefore in one direction, assuming $\sharp \emptyset \simeq \emptyset$ then
@@ -2107,23 +2107,23 @@ Conversely, assuming that $(\flat X \simeq \emptyset) \Leftrightarrow (X \simeq 
 and hence by the \LabRef{nLab}{Yoneda lemma} $\emptyset \simeq \sharp \emptyset$.
 
 Second, for the statement $\rightsquigarrow \Im \simeq \Im$ consider the following:
-For any $X \in \mathbf{H}$ and any $U \times D_s\in CartSp \rtimes SuperInfPoint \hookrightarrow \mathbf{H}$ we have by \LabRef{nLab}{adjunction} \LabRef{nLab}{natural equivalences}
+For any $X \in \bfH$ and any $U \times D_s\in CartSp \rtimes SuperInfPoint \hookrightarrow \bfH$ we have by \LabRef{nLab}{adjunction} \LabRef{nLab}{natural equivalences}
 \begin{displaymath}
 \begin{aligned}
-\mathbf{H}(U \times D_s , \stackrel{\rightsquigarrow}{\Im X})
+\bfH(U \times D_s , \stackrel{\rightsquigarrow}{\Im X})
 & \simeq
-\mathbf{H}(\stackrel{\rightrightarrows}{U \times D_s} , \Im X)
+\bfH(\stackrel{\rightrightarrows}{U \times D_s} , \Im X)
 \\
 &\simeq
-\mathbf{H}(\Re(\stackrel{\rightrightarrows}{U \times D_s}) , X)
+\bfH(\Re(\stackrel{\rightrightarrows}{U \times D_s}) , X)
 \\
 & \simeq
-\mathbf{H}(U, X)
+\bfH(U, X)
 \\
 & \simeq
-\mathbf{H}(\Re(U \times D_s), X)
+\bfH(\Re(U \times D_s), X)
 \\
-& \simeq \mathbf{H}(U \times D_s, \Im X)
+& \simeq \bfH(U \times D_s, \Im X)
 \end{aligned}
 \end{displaymath}
 Here the crucial step is the observation that on representables, by construction, the reduced part of the even part is the reduced part of the original object.
@@ -2133,7 +2133,7 @@ But observe that
 \label{CompletenessOfOppositionsInSuperFormalSmoothTypes}\hypertarget{CompletenessOfOppositionsInSuperFormalSmoothTypes}{}
 While, due to prop. \ref{DeterminateNegationsRealized}, in the model of def. \ref{SupergeometricModel}
 \begin{itemize}%
-\item the opposition $&#643; \dashv \sharp$ has determinate negation in the sense of def. \ref{CompleteOpposition};
+\item the opposition $\esh  \dashv \sharp$ has determinate negation in the sense of def. \ref{CompleteOpposition};
 \end{itemize}
 on the other hand
 \begin{itemize}%
@@ -2143,13 +2143,13 @@ on the other hand
 \begin{proof}
 The definition would require that
 \begin{displaymath}
-\stackrel{\rightsquigarrow}{\mathbb{R}^{0|2}}
+\stackrel{\rightsquigarrow}{\bbR^{0|2}}
 \longrightarrow
-\stackrel{\rightrightarrows}{\mathbb{R}^{0|2}}
+\stackrel{\rightrightarrows}{\bbR^{0|2}}
 \end{displaymath}
 is an epimorphism. But this is equivalent to the point inclusion
 \begin{displaymath}
-\ast \longrightarrow \mathbb{D}(1)
+\ast \longrightarrow \bbD(1)
 \end{displaymath}
 into the \LabRef{nLab}{formal dual} of the \LabRef{nLab}{algebra of dual numbers}.
 \end{proof}
@@ -2159,16 +2159,16 @@ The progressive system of moments above, yields, by prop. \ref{DeterminateNegati
 \begin{tabular}{l|l}
 \LabRef{nLab}{real line}&\LabRef{nLab}{superpoint}\\
 \hline 
-$\mathbb{R} = \mathbb{R}^{1\vert 0}$&$\mathbb{R}^{0\vert 1}$\\
-$&#643; \simeq loc_{\mathbb{R}}$&$\R \simeq loc_{\mathbb{R}^{0\vert 1}}$\\
+$\bbR = \bbR^{1\vert 0}$&$\bbR^{0\vert 1}$\\
+$\esh  \simeq loc_{\bbR}$&$\R \simeq loc_{\bbR^{0\vert 1}}$\\
 \end{tabular}
-Both have familiar structure of an \LabRef{nLab}{abelian group} object, $\mathbb{R}$ being the \LabRef{nLab}{additive group}, hence there are arbitrary \LabRef{nLab}{deloopings} $\mathbf{B}^n \mathbb{R}^{0|1}$ and $\mathbf{B}^{n}\mathbb{R}$.
+Both have familiar structure of an \LabRef{nLab}{abelian group} object, $\bbR$ being the \LabRef{nLab}{additive group}, hence there are arbitrary \LabRef{nLab}{deloopings} $\bfB^n \bbR^{0|1}$ and $\bfB^{n}\bbR$.
 Given two types, there are the \LabRef{nLab}{judgements} in which these appear as subject and as predicate, in the sense discussed \hyperlink{JudgementInFormalization}{above}.
-There are no non-trivial judgements with (a delooping of) $\mathbb{R}$ as the subject and (a delooping of) $\mathbb{R}^{0|1}$ as the predicate. But there turn out to be some exceptional judgements with subject $\mathbb{R}^{0|q}$ and predicate $\mathbf{B}^d \mathbb{R}$.
+There are no non-trivial judgements with (a delooping of) $\bbR$ as the subject and (a delooping of) $\bbR^{0|1}$ as the predicate. But there turn out to be some exceptional judgements with subject $\bbR^{0|q}$ and predicate $\bfB^d \bbR$.
 By example \ref{PrincipalBundlesAsJudgements} this leads to the deduction of the object which is the homotopy fibers of the corresponding maps. From these one obtains further judgements, then further objects, and so forth. This way a ``bouquet'' of objects is induced from the initial ones.
 We now discuss how this bouquet first of all yields \LabRef{nLab}{super Minkowski spacetime} (\hyperlink{HuertaSchreiber17}{Huerta-Schreiber 17}) and then further the \LabRef{nLab}{extended super Minkowski spacetimes} arising from \LabRef{nLab}{super p-brane} condensates (\hyperlink{FSS}{FSS}).
 \hypertarget{minkowski_spacetime}{}\paragraph*{{Minkowski spacetime}}\label{minkowski_spacetime}
-Consider first the \LabRef{nLab}{superpoint} $\mathbb{R}^{0|1}$.
+Consider first the \LabRef{nLab}{superpoint} $\bbR^{0|1}$.
 \begin{remark}
 \label{}\hypertarget{}{}
 This is the unique 0-truncated object which is
@@ -2178,15 +2178,15 @@ This is the unique 0-truncated object which is
 \end{enumerate}
 in that
 \begin{displaymath}
-\e(\mathbb{R}^{0|1})\simeq \mathbb{R}^{0|1}
+\e(\bbR^{0|1})\simeq \bbR^{0|1}
 \end{displaymath}
 \begin{displaymath}
-\stackrel{\rightrightarrows}{\mathbb{R}^{0|1}} \simeq \ast
+\stackrel{\rightrightarrows}{\bbR^{0|1}} \simeq \ast
 \end{displaymath}
 \end{remark}
-Since $\mathbb{R}^{0|1}$ (and the other objects obtained in a moment) are contractible as \LabRef{nLab}{super Lie groups}, we may use the \LabRef{nLab}{van Est isomorphism} to conveniently discuss them as \LabRef{nLab}{super Lie algebras}. Regarding $\mathbb{R}^{0\vert 1}$ as a \LabRef{nLab}{super Lie algebra}, then its \LabRef{nLab}{Chevalley-Eilenberg algebra} is freely generated from a $(1,odd)$-bigraded element $d\theta$
+Since $\bbR^{0|1}$ (and the other objects obtained in a moment) are contractible as \LabRef{nLab}{super Lie groups}, we may use the \LabRef{nLab}{van Est isomorphism} to conveniently discuss them as \LabRef{nLab}{super Lie algebras}. Regarding $\bbR^{0\vert 1}$ as a \LabRef{nLab}{super Lie algebra}, then its \LabRef{nLab}{Chevalley-Eilenberg algebra} is freely generated from a $(1,odd)$-bigraded element $d\theta$
 \begin{displaymath}
-CE(\mathbb{R}^{0\vert 1})
+CE(\bbR^{0\vert 1})
 =
 \left(
 \wedge^\bullet \langle d\theta \rangle, d_{CE} = 0
@@ -2195,27 +2195,27 @@ CE(\mathbb{R}^{0\vert 1})
 It is evident that
 \begin{prop}
 \label{1dsuperMinkowskiFromInvariantExtension}\hypertarget{1dsuperMinkowskiFromInvariantExtension}{}
-The second \LabRef[super]{nLab}{super Lie algebra} \LabRef{nLab}{Lie algebra cohomology} of $\mathbb{R}^{0\vert 1}$ is
+The second \LabRef[super]{nLab}{super Lie algebra} \LabRef{nLab}{Lie algebra cohomology} of $\bbR^{0\vert 1}$ is
 \begin{displaymath}
-H^{2}(\mathbb{R}^{0\vert 1}, \mathbb{R})
+H^{2}(\bbR^{0\vert 1}, \bbR)
 =
-\mathbb{R}
+\bbR
 \end{displaymath}
 represented by the 2-cocycles of the form
 \begin{displaymath}
 d\theta\wedge d\theta
-\in CE(\mathbb{R}^{0\vert 1})
+\in CE(\bbR^{0\vert 1})
 \end{displaymath}
 The \LabRef{nLab}{Lie algebra extension}
 \begin{displaymath}
 \itexarray{
-\mathbb{R}^{1|\mathbf{1}}
+\bbR^{1|\mathbf{1}}
 \\
 \downarrow
 \\
-\mathbb{R}^{0|1}
+\bbR^{0|1}
 &\stackrel{}{\longrightarrow}&
-\mathbf{B}^1 \mathbb{R}
+\bfB^1 \bbR
 }
 \end{displaymath}
 classified by this is the \LabRef{nLab}{super translation group} in 1-dimension.
@@ -2224,27 +2224,27 @@ This is the \LabRef{nLab}{worldline} of the \LabRef{nLab}{superparticle}.
 There are no further non-trivial cocycles here giving further extensions.
 Hence next consider the \LabRef{nLab}{Cartesian product} of the initial superpoint with itself.
 \begin{displaymath}
-\mathbb{R}^{0|2}
+\bbR^{0|2}
 =
-\mathbb{R}^{0|1}\times \mathbb{R}^{0|1}
+\bbR^{0|1}\times \bbR^{0|1}
 \end{displaymath}
 \begin{remark}
 \label{}\hypertarget{}{}
-This is still purely of negative bosonic moment in that $e(\mathbb{R}^{0|2}) \simeq \mathbb{R}^{0|2}$, but it no longer has purely no moment opposed to bosonic moment (witnessing that the fermionic opposition is not complete, lemma \ref{CompletenessOfOppositionsInSuperFormalSmoothTypes}), instead
+This is still purely of negative bosonic moment in that $e(\bbR^{0|2}) \simeq \bbR^{0|2}$, but it no longer has purely no moment opposed to bosonic moment (witnessing that the fermionic opposition is not complete, lemma \ref{CompletenessOfOppositionsInSuperFormalSmoothTypes}), instead
 \begin{displaymath}
-\stackrel{\rightrightarrows}{\mathbb{R}^{0|2}}
+\stackrel{\rightrightarrows}{\bbR^{0|2}}
 \simeq
-\mathbb{D}(1)
+\bbD(1)
 \end{displaymath}
 is the first-order \LabRef{nLab}{infinitesimal interval} (the \LabRef{nLab}{formal dual} of the ``\LabRef{nLab}{algebra of dual numbers}'').
 \end{remark}
 \begin{prop}
 \label{3dSuperMinkowskiSpacetime}\hypertarget{3dSuperMinkowskiSpacetime}{}
-The second \LabRef[super]{nLab}{super Lie algebra} \LabRef{nLab}{Lie algebra cohomology} of $\mathbb{R}^{0\vert 2}$ is
+The second \LabRef[super]{nLab}{super Lie algebra} \LabRef{nLab}{Lie algebra cohomology} of $\bbR^{0\vert 2}$ is
 \begin{displaymath}
-H^2(\mathbb{R}^{0\vert 2}, \mathbb{R})
+H^2(\bbR^{0\vert 2}, \bbR)
 \simeq
-\mathbb{R}^3
+\bbR^3
 \end{displaymath}
 represented by the cocycles of the form
 \begin{displaymath}
@@ -2263,13 +2263,13 @@ d\theta_1 \wedge d\theta_2
 The \LabRef[extension]{nLab}{infinity-group extension} classified by this
 \begin{displaymath}
 \itexarray{
-\mathbb{R}^{2,1|\mathbf{2}}
+\bbR^{2,1|\mathbf{2}}
 \\
 \downarrow
 \\
-\mathbb{R}^{0|2}
+\bbR^{0|2}
 &\stackrel{}{\longrightarrow}&
-\mathbf{B} \mathbb{R}^3
+\bfB \bbR^3
 }
 \end{displaymath}
 is 3-dimensional \LabRef{nLab}{super Minkowski spacetime}.
@@ -2283,53 +2283,53 @@ Now the old \LabRef{nLab}{brane scan} gives:
 \label{}\hypertarget{}{}
 The $Spin(2,1)$-invariant third Lie algebra cohomology of 3d Minkowski super-spacetime is
 \begin{displaymath}
-H^3(\mathbb{R}^{2,1\vert \mathbf{2}})^{Spin(2,1)} = \mathbb{R}
+H^3(\bbR^{2,1\vert \mathbf{2}})^{Spin(2,1)} = \bbR
 \end{displaymath}
-represented by the 3-cocycle which, as a \LabRef[left invariant]{nLab}{left invariant differential form} \LabRef{nLab}{super differential form} on $\mathbb{R}^{2,1\vert \mathbf{2}}$ is the \LabRef{nLab}{WZW term} in the \LabRef{nLab}{Green-Schwarz action functional} for the \LabRef{nLab}{super 1-brane in 3d}.
+represented by the 3-cocycle which, as a \LabRef[left invariant]{nLab}{left invariant differential form} \LabRef{nLab}{super differential form} on $\bbR^{2,1\vert \mathbf{2}}$ is the \LabRef{nLab}{WZW term} in the \LabRef{nLab}{Green-Schwarz action functional} for the \LabRef{nLab}{super 1-brane in 3d}.
 \begin{displaymath}
 \itexarray{
 \mathfrak{string}_{het  on  G_2}
 \\
 \downarrow
 \\
-\mathbb{R}^{2,1\vert \mathbf{2}}
+\bbR^{2,1\vert \mathbf{2}}
 &\stackrel{}{\longrightarrow}&
-\mathbf{B}^2 \mathbb{R}
+\bfB^2 \bbR
 }
 \end{displaymath}
 \end{prop}
-A definite globalization, of this 3-cocycle over a $\mathbb{R}^{3\vert \mathbf{2}}$-manifold requires, by def. \ref{DefiniteGlobalizationofWZWTerm}, that the \LabRef{nLab}{tangent bundle} is a bundle of \LabRef{nLab}{super Lie algebras} and that the cocycle extends to a \LabRef{nLab}{definite form}. This imposes \LabRef{nLab}{G-structure} for $G$ the \LabRef{nLab}{Lorentz group} (or rather its \LabRef{nLab}{spin group} \LabRef{nLab}{double cover}).
+A definite globalization, of this 3-cocycle over a $\bbR^{3\vert \mathbf{2}}$-manifold requires, by def. \ref{DefiniteGlobalizationofWZWTerm}, that the \LabRef{nLab}{tangent bundle} is a bundle of \LabRef{nLab}{super Lie algebras} and that the cocycle extends to a \LabRef{nLab}{definite form}. This imposes \LabRef{nLab}{G-structure} for $G$ the \LabRef{nLab}{Lorentz group} (or rather its \LabRef{nLab}{spin group} \LabRef{nLab}{double cover}).
 \begin{prop}
 \label{}\hypertarget{}{}
-The joint \LabRef{nLab}{stabilizer} of $GL(\mathbb{R}^{2,1\vert 2})$ of the Lie bracket and the 3-cocycle is the \LabRef{nLab}{pin group} $Pin(2,1)$, the unoriented generalization of the \LabRef{nLab}{spin group} $Spin(2,1)$, the \LabRef{nLab}{double cover} of the \LabRef{nLab}{Lorentz group} $SO(2,1)$.
+The joint \LabRef{nLab}{stabilizer} of $GL(\bbR^{2,1\vert 2})$ of the Lie bracket and the 3-cocycle is the \LabRef{nLab}{pin group} $Pin(2,1)$, the unoriented generalization of the \LabRef{nLab}{spin group} $Spin(2,1)$, the \LabRef{nLab}{double cover} of the \LabRef{nLab}{Lorentz group} $SO(2,1)$.
 \end{prop}
 This is one special case of a more general statement which we come to as prop. \ref{StabilizerOfSupersymmetryJointWith3Cocycle} below.
-Consider then $\mathbb{R}^{2,1\vert 4}$
+Consider then $\bbR^{2,1\vert 4}$
 \begin{displaymath}
 \itexarray{
-&& \mathbb{R}^{2,1\vert 4}
+&& \bbR^{2,1\vert 4}
 \\
 & \swarrow && \searrow
 \\
-\mathbb{R}^{0 \vert 2} && && \mathbb{R}^{0\vert 2}
+\bbR^{0 \vert 2} && && \bbR^{0\vert 2}
 \\
 & \searrow && \swarrow
 \\
-&& \mathbf{B} \mathbb{R}^3
+&& \bfB \bbR^3
 }
 \end{displaymath}
 \begin{prop}
 \label{4dSuperMinkowskiSpacetime}\hypertarget{4dSuperMinkowskiSpacetime}{}
-There is a 1-dimensional space of $Spin(2,1)$-invariant 2-cocycles on $\mathbb{R}^{2,1\vert \mathbf{2} + \mathbf{2}}$. The \LabRef{nLab}{Lie algebra extension} classified by that is 4d \LabRef{nLab}{super Minkowski spacetime}
+There is a 1-dimensional space of $Spin(2,1)$-invariant 2-cocycles on $\bbR^{2,1\vert \mathbf{2} + \mathbf{2}}$. The \LabRef{nLab}{Lie algebra extension} classified by that is 4d \LabRef{nLab}{super Minkowski spacetime}
 \begin{displaymath}
 \itexarray{
-\mathbb{R}^{3,1\vert 4}
+\bbR^{3,1\vert 4}
 \\
 \downarrow
 \\
-\mathbb{R}^{2,1\vert \mathbf{2}+{\mathbf{2}}}
+\bbR^{2,1\vert \mathbf{2}+{\mathbf{2}}}
 &\longrightarrow&
-\mathbf{B}\mathbb{R}
+\bfB\bbR
 }
 \end{displaymath}
 \end{prop}
@@ -2340,31 +2340,31 @@ Now the old \LabRef{nLab}{brane scan} gives:
 \begin{prop}
 \label{TheStringIn4d}\hypertarget{TheStringIn4d}{}
 \begin{displaymath}
-H^4(\mathbb{R}^{3,1\vert \mathbf{4}}) = \mathbb{R}
+H^4(\bbR^{3,1\vert \mathbf{4}}) = \bbR
 \end{displaymath}
-represented by the 4-cocycle which, as a \LabRef[left invariant]{nLab}{left invariant differential form} \LabRef{nLab}{super differential form} on $\mathbb{R}^{3,1\vert \mathbf{2}}$ is the \LabRef{nLab}{WZW term} in the \LabRef{nLab}{Green-Schwarz action functional} for the \LabRef{nLab}{super 2-brane in 4d}.
+represented by the 4-cocycle which, as a \LabRef[left invariant]{nLab}{left invariant differential form} \LabRef{nLab}{super differential form} on $\bbR^{3,1\vert \mathbf{2}}$ is the \LabRef{nLab}{WZW term} in the \LabRef{nLab}{Green-Schwarz action functional} for the \LabRef{nLab}{super 2-brane in 4d}.
 \begin{displaymath}
 \itexarray{
 \mathfrak{m}2\mathfrak{brane}_{onG_2}
 \\
 \downarrow
 \\
-\mathbb{R}^{3,1\vert  \mathbf{4} }
+\bbR^{3,1\vert  \mathbf{4} }
 &\stackrel{}{\longrightarrow}&
-\mathbf{B}^3 \mathbb{R}
+\bfB^3 \bbR
 }
 \end{displaymath}
 \end{prop}
 \hypertarget{lorentz_symmetry}{}\paragraph*{{Lorentz symmetry}}\label{lorentz_symmetry}
-Notice that so far we have obtained 3-dimensional and 4-dimensional Minkowski spacetime and the WZW-term for the \LabRef{nLab}{superstring} and the \LabRef{nLab}{membrane} propagating on it without assuming knowledge of the \LabRef{nLab}{Lorentz group}. In fact we assumed nothing but the presence of the \LabRef{nLab}{real line} $\mathbb{R}$ and the \LabRef{nLab}{odd line} $\mathbb{R}^{0|1}$ and we have simply investigated their cohomology.
+Notice that so far we have obtained 3-dimensional and 4-dimensional Minkowski spacetime and the WZW-term for the \LabRef{nLab}{superstring} and the \LabRef{nLab}{membrane} propagating on it without assuming knowledge of the \LabRef{nLab}{Lorentz group}. In fact we assumed nothing but the presence of the \LabRef{nLab}{real line} $\bbR$ and the \LabRef{nLab}{odd line} $\bbR^{0|1}$ and we have simply investigated their cohomology.
 The following proposition shows that the \LabRef{nLab}{Lorentz group}, in fact its \LabRef{nLab}{universal cover} by the pseudo-Riemannian \LabRef{nLab}{spin group} is \emph{deduced} from this.
 \begin{prop}
 \label{StabilizerOfSupersymmetryJointWith3Cocycle}\hypertarget{StabilizerOfSupersymmetryJointWith3Cocycle}{}
-Let $\mathbb{R}^{d-1,1,N}$ be \LabRef{nLab}{super Minkowski spacetime} in \LabRef{nLab}{dimension} $d \in \{3,4,6,10\}$ and let $\phi \in \Omega^{3}(\mathbb{R}^{d-1,1|N})$ the corresponding 3-form characterizing the \LabRef[super-1-brane]{nLab}{super p-brane} (\LabRef{nLab}{superstring}) in this dimension, according to the \LabRef{nLab}{brane scan} . Then the \LabRef{nLab}{stabilizer subgroup} of both the super Lie bracket and the cocycle is the \LabRef{nLab}{Spin group} $Spin(d-1,1)$:
+Let $\bbR^{d-1,1,N}$ be \LabRef{nLab}{super Minkowski spacetime} in \LabRef{nLab}{dimension} $d \in \{3,4,6,10\}$ and let $\phi \in \Omega^{3}(\bbR^{d-1,1|N})$ the corresponding 3-form characterizing the \LabRef[super-1-brane]{nLab}{super p-brane} (\LabRef{nLab}{superstring}) in this dimension, according to the \LabRef{nLab}{brane scan} . Then the \LabRef{nLab}{stabilizer subgroup} of both the super Lie bracket and the cocycle is the \LabRef{nLab}{Spin group} $Spin(d-1,1)$:
 \begin{displaymath}
-Stab_{GL(\mathbb{R}^{d-1,1|N})}([-,-], \phi)
+Stab_{GL(\bbR^{d-1,1|N})}([-,-], \phi)
 \simeq
-Spin(d-1,1) \hookrightarrow GL(\mathbb{R}^{d-1,1|N})
+Spin(d-1,1) \hookrightarrow GL(\bbR^{d-1,1|N})
 \end{displaymath}
 \end{prop}
 \begin{proof}
@@ -2377,7 +2377,7 @@ where $\eta(-,-)$ is the given \LabRef{nLab}{Minkowski metric}, and that the bil
 \begin{displaymath}
 [-,-]\colon S \otimes S\to V
 \end{displaymath}
-is surjective. This imples that if $g \in GL(\mathbb{R}^{d-1,1|N})$ preserves both the bracket and the cocycle for all $\psi, \phi \in S$ and $v \in V$ to
+is surjective. This imples that if $g \in GL(\bbR^{d-1,1|N})$ preserves both the bracket and the cocycle for all $\psi, \phi \in S$ and $v \in V$ to
 \begin{displaymath}
 \eta( [g(\psi),g(\phi)], g(v) )
 =
@@ -2390,7 +2390,7 @@ then it preserves the Minkowski metric for all $w,v$
 \eta(g(w), g(v)) = \eta(w,v)
 \end{displaymath}
 \end{proof}
-This means that $\mathbb{R}^{2,1|2}$-manifolds $X$ equipped with the 3-cocycle as a \LabRef{nLab}{definite form} such that the resulting \LabRef{nLab}{G-structure} according to prop. \ref{DefiniteGlobalizationsToGStructure} also preserves the the group structure on $\mathbb{R}^{2,1|2}$, then this is equivalent to equipping $X$ with Lorentzian \LabRef{nLab}{orthogonal structure}, hence with super-\LabRef{nLab}{pseudo-Riemannian metric}, hence with a \LabRef[field]{nLab}{field (physics)}-configuration for \LabRef{nLab}{3d supergravity}.
+This means that $\bbR^{2,1|2}$-manifolds $X$ equipped with the 3-cocycle as a \LabRef{nLab}{definite form} such that the resulting \LabRef{nLab}{G-structure} according to prop. \ref{DefiniteGlobalizationsToGStructure} also preserves the the group structure on $\bbR^{2,1|2}$, then this is equivalent to equipping $X$ with Lorentzian \LabRef{nLab}{orthogonal structure}, hence with super-\LabRef{nLab}{pseudo-Riemannian metric}, hence with a \LabRef[field]{nLab}{field (physics)}-configuration for \LabRef{nLab}{3d supergravity}.
 \hypertarget{fundamental_branes}{}\paragraph*{{Fundamental branes}}\label{fundamental_branes}
 \LabRef{schreiber}{The brane bouquet} that we find\ldots{}
 \begin{displaymath}
@@ -2399,23 +2399,23 @@ This means that $\mathbb{R}^{2,1|2}$-manifolds $X$ equipped with the 3-cocycle a
 \\
 && \downarrow
 \\
-&& \mathbb{R}^{3,1|\mathbf{4}}  &&  \mathbb{R}^{2,1|\overline{\mathbf{2}}}
+&& \bbR^{3,1|\mathbf{4}}  &&  \bbR^{2,1|\overline{\mathbf{2}}}
 \\
 && \downarrow & \nearrow&  & \searrow
 \\
-\mathfrak{string}_{IIAonG_2} &\longrightarrow& \mathbb{R}^{2,1|\mathbf{2}+\overline{\mathbf{2}}} &&  && \mathbb{R}^{3}
+\mathfrak{string}_{IIAonG_2} &\longrightarrow& \bbR^{2,1|\mathbf{2}+\overline{\mathbf{2}}} &&  && \bbR^{3}
 \\
 && \downarrow &\searrow&  & \nearrow
 \\
-&& \mathbb{R}^{0|\mathbf{2}+\overline{\mathbf{2}}} &&  \mathbb{R}^{2,1|\mathbf{2}}
+&& \bbR^{0|\mathbf{2}+\overline{\mathbf{2}}} &&  \bbR^{2,1|\mathbf{2}}
 \\
 && && \downarrow
 \\
-&& && \mathbb{R}^{0|\mathbf{2}}
+&& && \bbR^{0|\mathbf{2}}
 \\
 && & \swarrow && \searrow
 \\
-&& \mathbb{R}^{0|1} && && \mathbb{R}^{0|1}
+&& \bbR^{0|1} && && \bbR^{0|1}
 }
 \end{displaymath}
 this is equivalently the physics coming from \LabRef{nLab}{M-theory on G2-manifolds}, given by the extensions that emanate from 32 copies of the smallest superpoint:
@@ -2429,27 +2429,27 @@ this is equivalently the physics coming from \LabRef{nLab}{M-theory on G2-manifo
 \\
 && && \downarrow
 \\
-&& \underset{p}{\coprod} \mathfrak{d}{2p}\mathfrak{brane} && \mathbb{R}^{10,1|\mathbf{32}}
+&& \underset{p}{\coprod} \mathfrak{d}{2p}\mathfrak{brane} && \bbR^{10,1|\mathbf{32}}
 \\
 && \downarrow && \downarrow
 \\
-&& \mathfrak{string}_{IIA} &\longrightarrow & \mathbb{R}^{9,1|\mathbf{16}+\overline{\mathbf{16}}}
+&& \mathfrak{string}_{IIA} &\longrightarrow & \bbR^{9,1|\mathbf{16}+\overline{\mathbf{16}}}
 \\
 && && \downarrow
 \\
-&& && \mathbb{R}^{0|\mathbf{16}+\overline{\mathbf{16}}}
+&& && \bbR^{0|\mathbf{16}+\overline{\mathbf{16}}}
 \\
 && & \swarrow && \searrow
 \\
-&& \mathbb{R}^{0|1} && \cdots  && \mathbb{R}^{0|1}
+&& \bbR^{0|1} && \cdots  && \bbR^{0|1}
 }
 \end{displaymath}
 These are branches of \LabRef{schreiber}{The brane bouquet} of string theory, see there for more. By prop. \ref{WZWTermFromCocycle} each branch here gives the WZW form for the corresponing \LabRef{nLab}{Green-Schwarz super p-brane} sigma model.
 \hypertarget{gravity}{}\paragraph*{{Gravity}}\label{gravity}
 Above we have found two interlocking ingredients arising from the axiomatics:
 \begin{enumerate}%
-\item \textbf{abstract generals} -- Given any \LabRef{nLab}{group object} $V$, then there is an abstract general concept of $V$-manifolds $X$, def. \ref{VManifold}. Given furthermore a \LabRef{nLab}{WZW term} $\mathbf{L}_{WZW}^V$ on $V$, then there is an abstract general concept of \LabRef[definite globalizations]{nLab}{definite globalization of WZW term} of this term over these manifolds $X$, \ref{DefiniteGlobalizationofWZWTerm} inducing \LabRef[G-structures]{nLab}{G-structure} on $X$, prop. \ref{DefiniteGlobalizationsToGStructure}.
-\item \textbf{concrete individuals} -- We have found concrete individual $V$s: \LabRef{nLab}{extended super Minkowski spacetimes}, prop. \ref{3dSuperMinkowskiSpacetime}, prop. \ref{4dSuperMinkowskiSpacetime} emanating from the objects which represent the moments $&#643;$ and $\rightrightarrows$, and we have further found individual $\mathbf{L}_{WZW}^V$: the \LabRef[super p-brane WZW terms]{nLab}{Green-Schwarz super p-brane}, prop. \ref{TheStringIn4d} etc., forming \LabRef{schreiber}{The brane bouquet}.
+\item \textbf{abstract generals} -- Given any \LabRef{nLab}{group object} $V$, then there is an abstract general concept of $V$-manifolds $X$, def. \ref{VManifold}. Given furthermore a \LabRef{nLab}{WZW term} $\bfL_{WZW}^V$ on $V$, then there is an abstract general concept of \LabRef[definite globalizations]{nLab}{definite globalization of WZW term} of this term over these manifolds $X$, \ref{DefiniteGlobalizationofWZWTerm} inducing \LabRef[G-structures]{nLab}{G-structure} on $X$, prop. \ref{DefiniteGlobalizationsToGStructure}.
+\item \textbf{concrete individuals} -- We have found concrete individual $V$s: \LabRef{nLab}{extended super Minkowski spacetimes}, prop. \ref{3dSuperMinkowskiSpacetime}, prop. \ref{4dSuperMinkowskiSpacetime} emanating from the objects which represent the moments $\esh $ and $\rightrightarrows$, and we have further found individual $\bfL_{WZW}^V$: the \LabRef[super p-brane WZW terms]{nLab}{Green-Schwarz super p-brane}, prop. \ref{TheStringIn4d} etc., forming \LabRef{schreiber}{The brane bouquet}.
 \end{enumerate}
 Plugging the concrete individuals into the general abstract theory, we hence obtain particular phenomena.
 \begin{displaymath}
@@ -2458,21 +2458,21 @@ Plugging the concrete individuals into the general abstract theory, we hence obt
 \\
 & \swarrow && \searrow
 \\
-\mathbb{R}^{d-1,1|\mathbf{N}}
+\bbR^{d-1,1|\bfN}
 && \swArrow &&
 X
 \\
-& {}_{\mathllap{\mathbf{L}_{WZW}^{brane}}}\searrow && \swarrow_{\mathrlap{\mathbf{L}_{WZW}^X}}
+& {}_{\mathllap{\bfL_{WZW}^{brane}}}\searrow && \swarrow_{\mathrlap{\bfL_{WZW}^X}}
 \\
-&& \mathbf{B}^{p+2}\mathbb{G}_{conn}
+&& \bfB^{p+2}\bbG_{conn}
 }
 \end{displaymath}
-Specifically there is 11-dimensional \LabRef{nLab}{super Minkowski spacetime} $V = \mathbb{R}^{10,1\vert \mathbf{32}}$ carrying the WZW term $\mathbf{L}_{WZW}^{M2}$ for the \LabRef{nLab}{M2-brane}, in some sense the endpoint of the bouquet of super-spacetimes. The \LabRef{nLab}{KK-compactification} of this on a 7-dimensional \LabRef{nLab}{G2-manifold} yields the 4-dimensional super-Minkowski spacetime discussed above, with the WZW term for the \LabRef{nLab}{super 2-brane in 4d}.
-The 11-dimensional super-Minkowski spacetime is special in many ways, one of which is that in this dimension the \LabRef{nLab}{equations of motion} of \LabRef{nLab}{11-dimensional supergravity} on a $(Spin(10,1)\hookrightarrow Iso(\mathbb{R}^{10,1\vert \mathbf{32}}))$-\LabRef{nLab}{super Cartan geometry} $X$ modeled on $\mathbb{R}^{10,1\vert \mathbf{32}}$ are already captured by just a constraint on the \LabRef[torsion tensor]{nLab}{torsion of a G-structure}. But by remark \ref{TorsionConstraints} this means that in dimension 11 the equations of motion of supergravity have an immediate axiomatization in our objective logic.
-equivalent to just the condition that the of $X$ is at each point and to first infinitesimal order the intrinsic torsion of $\mathbb{R}^{10,1\vert \mathbf{32}}$
+Specifically there is 11-dimensional \LabRef{nLab}{super Minkowski spacetime} $V = \bbR^{10,1\vert \mathbf{32}}$ carrying the WZW term $\bfL_{WZW}^{M2}$ for the \LabRef{nLab}{M2-brane}, in some sense the endpoint of the bouquet of super-spacetimes. The \LabRef{nLab}{KK-compactification} of this on a 7-dimensional \LabRef{nLab}{G2-manifold} yields the 4-dimensional super-Minkowski spacetime discussed above, with the WZW term for the \LabRef{nLab}{super 2-brane in 4d}.
+The 11-dimensional super-Minkowski spacetime is special in many ways, one of which is that in this dimension the \LabRef{nLab}{equations of motion} of \LabRef{nLab}{11-dimensional supergravity} on a $(Spin(10,1)\hookrightarrow Iso(\bbR^{10,1\vert \mathbf{32}}))$-\LabRef{nLab}{super Cartan geometry} $X$ modeled on $\bbR^{10,1\vert \mathbf{32}}$ are already captured by just a constraint on the \LabRef[torsion tensor]{nLab}{torsion of a G-structure}. But by remark \ref{TorsionConstraints} this means that in dimension 11 the equations of motion of supergravity have an immediate axiomatization in our objective logic.
+equivalent to just the condition that the of $X$ is at each point and to first infinitesimal order the intrinsic torsion of $\bbR^{10,1\vert \mathbf{32}}$
 \begin{prop}
 \label{VacuumSolutionsIn11d}\hypertarget{VacuumSolutionsIn11d}{}
-First-order integrable $(Spin(10,1)\hookrightarrow Iso(\mathbb{R}^{10,1\vert \mathbf{32}}))$-\LabRef[super-Cartan geometries]{nLab}{super Cartan geometry}, def. \ref{CartanGeometry}, on $\mathbb{R}^{10,1\vert\mathbf{32}}$-manifolds $X$, def. \ref{VManifold}, which are first-order integrable with respect to the intrinsic left-invariant \LabRef[torsion]{nLab}{torsion of a G-structure} of $\mathbb{R}^{10,1\vert \mathbf{32}}$, remark \ref{TorsionConstraints}, are equivalent to \LabRef{nLab}{vacuum} solutions to the \LabRef{nLab}{equations of motion} of \LabRef{nLab}{11-dimensional supergravity}, i.e. to solutions for which the \LabRef{nLab}{field strength} of the \LabRef{nLab}{gravitino} and of the \LabRef{nLab}{supergravity C-field} vanishes identically, hence to solutions to the ordinary vacuum \LabRef{nLab}{Einstein equations} in 11d.
+First-order integrable $(Spin(10,1)\hookrightarrow Iso(\bbR^{10,1\vert \mathbf{32}}))$-\LabRef[super-Cartan geometries]{nLab}{super Cartan geometry}, def. \ref{CartanGeometry}, on $\bbR^{10,1\vert\mathbf{32}}$-manifolds $X$, def. \ref{VManifold}, which are first-order integrable with respect to the intrinsic left-invariant \LabRef[torsion]{nLab}{torsion of a G-structure} of $\bbR^{10,1\vert \mathbf{32}}$, remark \ref{TorsionConstraints}, are equivalent to \LabRef{nLab}{vacuum} solutions to the \LabRef{nLab}{equations of motion} of \LabRef{nLab}{11-dimensional supergravity}, i.e. to solutions for which the \LabRef{nLab}{field strength} of the \LabRef{nLab}{gravitino} and of the \LabRef{nLab}{supergravity C-field} vanishes identically, hence to solutions to the ordinary vacuum \LabRef{nLab}{Einstein equations} in 11d.
 \end{prop}
 \begin{proof}
 (\href{http://ncatlab.org/nlab/show/torsion+constraints+in+supergravity#Howe97}{Howe 97}) shows that imposing (on some \LabRef{nLab}{chart}) $\mathbf{d} E^a + \omega^{a}{}_b \wedge E^b - \bar \psi \Gamma^a \psi  = 0$ implies (and hence is equivalent to) the equations of motion of \LabRef{nLab}{11d supergravity}. These equations (see e.g. \href{http://ncatlab.org/nlab/show/11-dimensional%20supergravity#DAuriaFre}{D'Auria-Fré 82, p. 31}) then show that furthermore requiring $\mathbf{d} \psi + \tfrac{1}{2}\omega_{a b} \Gamma^{a b}\psi = 0$ (and hence requiring the full supertorsion tensor to be that of super-Minkowski spacetime) puts the \LabRef{nLab}{field strength} of the \LabRef{nLab}{gravitino} and of the \LabRef{nLab}{supergravity C-field} to 0.
@@ -2483,7 +2483,7 @@ Vacuum Einstein solutions as in prop. \ref{VacuumSolutionsIn11d}, are considered
 \end{remark}
 \begin{prop}
 \label{}\hypertarget{}{}
-Given a \LabRef[definite globalization]{nLab}{definite globalization of WZW term} $\mathbf{L}_{WZW}^X$ of a super $p$-brane WZW term $\mathbf{L}_{WZW}^V$, then the \LabRef{nLab}{stabilizer infinity-group} of $\mathbf{L}_{WZW}$ is the integrated \LabRef{nLab}{BPS charge} algebra of this solution of supergravity.
+Given a \LabRef[definite globalization]{nLab}{definite globalization of WZW term} $\bfL_{WZW}^X$ of a super $p$-brane WZW term $\bfL_{WZW}^V$, then the \LabRef{nLab}{stabilizer infinity-group} of $\bfL_{WZW}$ is the integrated \LabRef{nLab}{BPS charge} algebra of this solution of supergravity.
 \end{prop}
 See at \emph{\href{http://ncatlab.org/nlab/show/BPS+state#InTermsOfHigherDifferentialGeometry}{BPS charge -- Formalization in higher differential geometry}}.
 \hypertarget{acknowledgements}{}\subsection*{{Acknowledgements}}\label{acknowledgements}

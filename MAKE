@@ -4,4 +4,4 @@ sed -i 's/\[\]//g' tidied.tex
 sed -i 's/\$\\,\$ *//g' tidied.tex
 sed -i 's/\\[,.;:]//g' tidied.tex
 sed -i '/\\begin{document}/,$!d' tidied.tex
-sed -i '1s/^/\\import{preamble}\n\n' tidied.tex
+sed -i '1s/^/\\input{preamble}\n\n' tidied.tex
